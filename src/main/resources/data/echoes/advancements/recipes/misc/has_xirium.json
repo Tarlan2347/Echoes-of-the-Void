@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_xirium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:xirium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_xirium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:xirium_axe",
+      "echoes:xirium_block_from_xirium",
+      "echoes:xirium_from_xirium_block",
+      "echoes:xirium_hoe",
+      "echoes:xirium_pickaxe",
+      "echoes:xirium_shovel",
+      "echoes:xirium_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

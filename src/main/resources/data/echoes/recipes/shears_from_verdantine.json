@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "v": {
+      "item": "echoes:verdantine_ingot"
+    }
+  },
+  "pattern": [
+    " v",
+    "v "
+  ],
+  "result": {
+    "item": "minecraft:shears"
+  },
+  "show_notification": true
+}

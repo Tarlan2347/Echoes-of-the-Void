@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:cobalt_shimmerdown_sapling"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blue_dye",
+    "count": 2
+  }
+}

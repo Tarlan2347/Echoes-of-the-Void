@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_perialight": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:perialight"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_perialight"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:perialight_axe",
+      "echoes:perialight_block_from_perialight",
+      "echoes:perialight_boots",
+      "echoes:perialight_chestplate",
+      "echoes:perialight_from_perialight_block",
+      "echoes:perialight_helmet",
+      "echoes:perialight_hoe",
+      "echoes:perialight_leggings",
+      "echoes:perialight_pickaxe",
+      "echoes:perialight_shovel",
+      "echoes:perialight_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

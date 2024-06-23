@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "echoes:block/stone/umbrelith_bricks",
+    "side": "echoes:block/stone/umbrelith_bricks"
+  }
+}

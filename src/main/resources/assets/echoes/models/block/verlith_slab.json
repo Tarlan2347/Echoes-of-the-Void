@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "echoes:block/stone/verlith_block",
+    "side": "echoes:block/stone/verlith_slab",
+    "top": "echoes:block/stone/verlith_block"
+  }
+}

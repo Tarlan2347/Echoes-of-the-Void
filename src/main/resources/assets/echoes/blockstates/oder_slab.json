@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes:block/oder_slab"
+    },
+    "type=double": {
+      "model": "echoes:block/oder_slab_double"
+    },
+    "type=top": {
+      "model": "echoes:block/oder_slab_top"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "bottom": "echoes:block/wood/cobalt_shimmerdown_leaves_top",
+    "side": "echoes:block/wood/flowering_cobalt_shimmerdown_leaves",
+    "top": "echoes:block/wood/flowering_cobalt_shimmerdown_leaves_top"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.0,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "echoes:llerae_fruit"
+  },
+  "result": "echoes:baked_llerae_fruit"
+}

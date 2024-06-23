@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:llerae_fruit"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blue_dye",
+    "count": 2
+  }
+}

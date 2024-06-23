@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:azuretine_ingot"
+    }
+  ],
+  "result": {
+    "item": "echoes:azuretine_nugget",
+    "count": 9
+  }
+}

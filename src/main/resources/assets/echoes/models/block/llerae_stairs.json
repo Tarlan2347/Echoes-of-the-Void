@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "top": "echoes:block/wood/llerae_planks",
+    "side": "echoes:block/wood/llerae_planks",
+    "bottom": "echoes:block/wood/llerae_planks"
+  }
+}

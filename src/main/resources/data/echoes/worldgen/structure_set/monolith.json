@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "echoes:monolith",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 950552682,
+    "spacing": 512,
+    "separation": 128
+  }
+}

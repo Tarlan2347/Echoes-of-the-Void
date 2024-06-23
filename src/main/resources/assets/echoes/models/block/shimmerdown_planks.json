@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "echoes:block/wood/shimmerdown_planks",
+    "end": "echoes:block/wood/shimmerdown_planks_top"
+  }
+}

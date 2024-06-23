@@ -1,0 +1,55 @@
+{
+  "feature": "echoes:forest_llerae",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 1,
+            "data": 16
+          },
+          {
+            "weight": 2,
+            "data": 8
+          },
+          {
+            "weight": 4,
+            "data": 4
+          },
+          {
+            "weight": 1,
+            "data": 4
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "echoes:llerae_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -1,
+          "max_inclusive": 1
+        }
+      },
+      "y_spread": 0
+    }
+  ]
+}

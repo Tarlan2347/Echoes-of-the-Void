@@ -1,0 +1,32 @@
+{
+  "feature": "echoes:cobalt_tuft_patch",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 12,
+          "max_inclusive": 24
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:would_survive",
+            "state": {
+              "Name": "echoes:cobalt_tuft_small"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

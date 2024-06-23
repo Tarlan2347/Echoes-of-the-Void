@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_azuretine_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:azuretine_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_azuretine_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:azuretine_axe",
+      "echoes:azuretine_block_from_azuretine_ingot",
+      "echoes:azuretine_boots",
+      "echoes:azuretine_chestplate",
+      "echoes:azuretine_helmet",
+      "echoes:azuretine_hoe",
+      "echoes:azuretine_ingot_from_azuretine_block",
+      "echoes:azuretine_ingot_from_azuretine_nugget",
+      "echoes:azuretine_leggings",
+      "echoes:azuretine_nugget_from_azuretine_ingot",
+      "echoes:azuretine_pickaxe",
+      "echoes:azuretine_shovel",
+      "echoes:azuretine_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

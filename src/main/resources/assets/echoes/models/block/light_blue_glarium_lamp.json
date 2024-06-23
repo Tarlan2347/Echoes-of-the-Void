@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "echoes:block/light_blue_glarium_lamp"
+  }
+}

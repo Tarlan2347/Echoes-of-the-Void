@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cindrite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:cindrite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_cindrite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:cindrite_axe",
+      "echoes:cindrite_axe_alt",
+      "echoes:cindrite_block_from_cindrite",
+      "echoes:cindrite_from_cindrite_block",
+      "echoes:cindrite_hoe",
+      "echoes:cindrite_hoe_alt",
+      "echoes:cindrite_pickaxe",
+      "echoes:cindrite_shovel",
+      "echoes:cindrite_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

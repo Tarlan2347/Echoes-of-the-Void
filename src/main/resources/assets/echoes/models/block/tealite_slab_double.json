@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "echoes:block/stone/tealite_block",
+    "side": "echoes:block/stone/tealite_slab"
+  }
+}

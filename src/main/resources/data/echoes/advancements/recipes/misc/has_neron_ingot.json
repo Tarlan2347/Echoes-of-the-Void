@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_neron_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:neron_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_neron_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:neron_axe",
+      "echoes:neron_block_from_neron_ingot",
+      "echoes:neron_boots",
+      "echoes:neron_chestplate",
+      "echoes:neron_helmet",
+      "echoes:neron_hoe",
+      "echoes:neron_ingot_from_neron_block",
+      "echoes:neron_ingot_from_neron_nugget",
+      "echoes:neron_leggings",
+      "echoes:neron_nugget_from_neron_ingot",
+      "echoes:neron_pickaxe",
+      "echoes:neron_shovel",
+      "echoes:neron_sword",
+      "echoes:shield_from_neron",
+      "echoes:anvil_from_neron",
+      "echoes:smithing_table_from_neron"
+    ]
+  },
+  "sends_telemetry_event": false
+}

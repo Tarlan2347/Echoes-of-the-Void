@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "echoes:block/stripped_llerae_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "echoes:block/stripped_llerae_log"
+    },
+    "axis=z": {
+      "model": "echoes:block/stripped_llerae_log_horizontal",
+      "x": 90
+    }
+  }
+}

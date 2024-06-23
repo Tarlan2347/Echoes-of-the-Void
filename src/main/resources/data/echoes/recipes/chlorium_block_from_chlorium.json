@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:chlorium"
+    }
+  },
+  "result": {
+    "item": "echoes:chlorium_block"
+  }
+}

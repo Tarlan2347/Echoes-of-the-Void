@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "u": {
+      "item": "echoes:smooth_umbrelith"
+    },
+    "f": {
+      "item": "minecraft:furnace"
+    },
+    "n": {
+      "item": "echoes:neron_ingot"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nfn",
+    "uuu"
+  ],
+  "result": {
+    "item": "minecraft:blast_furnace"
+  },
+  "show_notification": true
+}

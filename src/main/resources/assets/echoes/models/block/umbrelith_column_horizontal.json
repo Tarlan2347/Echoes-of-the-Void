@@ -1,0 +1,22 @@
+{
+  "textures": {
+    "texture": "echoes:block/stone/umbrelith_column",
+    "particle": "echoes:block/stone/umbrelith_column"
+  },
+  "elements": [
+    {
+      "name": "bar_vertical",
+      "from": [0, 4, 4],
+      "to": [16, 12, 12],
+      "faces": {
+        "north": {"uv": [4, 0, 12, 16], "rotation": 90, "texture": "#texture"},
+        "east": {"uv": [12, 12, 4, 4], "rotation": 270, "texture": "#texture"},
+        "south": {"uv": [4, 0, 12, 16], "rotation": 270, "texture": "#texture"},
+        "west": {"uv": [12, 12, 4, 4], "rotation": 270, "texture": "#texture"},
+        "up": {"uv": [4, 0, 12, 16], "rotation": 270, "texture": "#texture"},
+        "down": {"uv": [4, 0, 12, 16], "rotation": 270, "texture": "#texture"}
+      }
+    }
+  ],
+  "display": {}
+}

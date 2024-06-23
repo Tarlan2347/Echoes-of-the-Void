@@ -1,0 +1,125 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stonecutter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stonecutter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_stonecutter"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:rough_verlith_slab_from_verlith_stonecutting",
+      "echoes:rough_verlith_stairs_from_verlith_stonecutting",
+      "echoes:rough_verlith_wall_from_verlith_stonecutting",
+      "echoes:verlith_wall_from_verlith_stonecutting",
+      "echoes:verlith_block_from_verlith_stonecutting",
+      "echoes:verlith_slab_from_verlith_stonecutting",
+      "echoes:verlith_stairs_from_verlith_stonecutting",
+      "echoes:verlith_tiles_from_verlith_stonecutting",
+      "echoes:verlith_pillar_from_verlith_stonecutting",
+      "echoes:chiseled_verlith_from_verlith_stonecutting",
+
+      "echoes:rough_tealite_slab_from_tealite_stonecutting",
+      "echoes:rough_tealite_stairs_from_tealite_stonecutting",
+      "echoes:rough_tealite_wall_from_tealite_stonecutting",
+      "echoes:tealite_block_from_tealite_stonecutting",
+      "echoes:tealite_slab_from_tealite_stonecutting",
+      "echoes:tealite_stairs_from_tealite_stonecutting",
+      "echoes:tealite_wall_from_tealite_stonecutting",
+      "echoes:tealite_tiles_from_tealite_stonecutting",
+      "echoes:tealite_pillar_from_tealite_stonecutting",
+      "echoes:chiseled_tealite_from_tealite_stonecutting",
+
+      "echoes:rough_palestone_slab_from_palestone_stonecutting",
+      "echoes:rough_palestone_stairs_from_palestone_stonecutting",
+      "echoes:rough_palestone_wall_from_palestone_stonecutting",
+      "echoes:palestone_block_from_palestone_stonecutting",
+      "echoes:palestone_slab_from_palestone_stonecutting",
+      "echoes:palestone_stairs_from_palestone_stonecutting",
+      "echoes:palestone_wall_from_palestone_stonecutting",
+      "echoes:palestone_tiles_from_palestone_stonecutting",
+      "echoes:palestone_pillar_from_palestone_stonecutting",
+      "echoes:palestone_pillar_cross_from_palestone_stonecutting",
+      "echoes:chiseled_palestone_from_palestone_stonecutting",
+
+      "echoes:smooth_bluestone_from_bluestone_stonecutting",
+      "echoes:polished_bluestone_from_bluestone_stonecutting",
+      "echoes:bluestone_bricks_from_bluestone_stonecutting",
+      "echoes:quartz_style_bluestone_bricks_from_bluestone_stonecutting",
+      "echoes:bluestone_stairs_from_bluestone_stonecutting",
+      "echoes:bluestone_slab_from_bluestone_stonecutting",
+      "echoes:bluestone_wall_from_bluestone_stonecutting",
+      "echoes:bluestone_pillar_from_bluestone_stonecutting",
+      "echoes:chiseled_bluestone_from_bluestone_stonecutting",
+
+      "echoes:polished_oder_from_oder_stonecutting",
+      "echoes:oder_bricks_from_oder_stonecutting",
+      "echoes:oder_tiles_from_oder_stonecutting",
+      "echoes:oder_pillar_from_oder_stonecutting",
+      "echoes:oder_stairs_from_oder_stonecutting",
+      "echoes:oder_slab_from_oder_stonecutting",
+      "echoes:oder_wall_from_oder_stonecutting",
+
+      "echoes:cobbled_umbrelith_from_rough_umbrelith_stonecutting",
+      "echoes:cobbled_umbrelith_from_umbrelith_stonecutting",
+      "echoes:umbrelith_from_cobbled_umbrelith_stonecutting",
+      "echoes:smooth_umbrelith_from_umbrelith_stonecutting",
+      "echoes:framed_umbrelith_from_umbrelith_stonecutting",
+      "echoes:framed_cobbled_umbrelith_from_umbrelith_stonecutting",
+      "echoes:rough_umbrelith_slab_from_umbrelith_stonecutting",
+      "echoes:rough_umbrelith_stairs_from_umbrelith_stonecutting",
+      "echoes:rough_umbrelith_wall_from_umbrelith_stonecutting",
+      "echoes:smooth_umbrelith_from_smelting_umbrelith",
+      "echoes:chiseled_umbrelith_from_umbrelith_stonecutting",
+      "echoes:cut_umbrelith_from_umbrelith_stonecutting",
+      "echoes:fine_umbrelith_brick_slab_from_umbrelith_stonecutting",
+      "echoes:fine_umbrelith_brick_stairs_from_umbrelith_stonecutting",
+      "echoes:fine_umbrelith_bricks_from_umbrelith_stonecutting",
+      "echoes:fine_umbrelith_tile_slab_from_umbrelith_stonecutting",
+      "echoes:fine_umbrelith_tile_stairs_from_umbrelith_stonecutting",
+      "echoes:fine_umbrelith_tiles_from_umbrelith_stonecutting",
+      "echoes:patterned_umbrelith_tiles_from_umbrelith_stonecutting",
+      "echoes:reinforced_umbrelith_panel_from_umbrelith_stonecutting",
+      "echoes:reinforced_umbrelith_panel_inset_from_umbrelith_stonecutting",
+      "echoes:smooth_umbrelith_slab_from_umbrelith_stonecutting",
+      "echoes:smooth_umbrelith_stairs_from_umbrelith_stonecutting",
+      "echoes:smooth_umbrelith_wall_from_umbrelith_stonecutting",
+      "echoes:three_by_three_umbrelith_tiles_from_umbrelith_stonecutting",
+      "echoes:umbrelith_block_from_umbrelith_stonecutting",
+      "echoes:umbrelith_brick_slab_from_umbrelith_stonecutting",
+      "echoes:umbrelith_brick_stairs_from_umbrelith_stonecutting",
+      "echoes:umbrelith_bricks_from_umbrelith_stonecutting",
+      "echoes:umbrelith_panel_from_umbrelith_stonecutting",
+      "echoes:umbrelith_panel_inset_from_umbrelith_stonecutting",
+      "echoes:umbrelith_pillar_cross_from_umbrelith_stonecutting",
+      "echoes:umbrelith_pillar_from_umbrelith_stonecutting",
+      "echoes:umbrelith_pillar_slab_from_umbrelith_stonecutting",
+      "echoes:umbrelith_omni_slab_from_umbrelith_stonecutting",
+      "echoes:umbrelith_pillar_stairs_from_umbrelith_stonecutting",
+      "echoes:umbrelith_slab_from_umbrelith_stonecutting",
+      "echoes:umbrelith_stairs_from_umbrelith_stonecutting",
+      "echoes:umbrelith_wall_from_umbrelith_stonecutting",
+      "echoes:umbrelith_tile_slab_from_umbrelith_stonecutting",
+      "echoes:umbrelith_tile_stairs_from_umbrelith_stonecutting",
+      "echoes:umbrelith_tiles_from_umbrelith_stonecutting",
+      "echoes:smooth_umbrelith_from_full_umbrelith_block_stonecutting",
+      "echoes:verlith_from_full_verlith_block_stonecutting",
+      "echoes:tealite_from_full_tealite_block_stonecutting",
+      "echoes:palestone_from_full_palestone_block_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

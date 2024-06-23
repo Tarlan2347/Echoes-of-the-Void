@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "echoes:block/wood/stripped_llerae_log_top",
+    "side": "echoes:block/wood/stripped_llerae_log_side"
+  }
+}

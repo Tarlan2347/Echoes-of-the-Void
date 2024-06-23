@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "echoes:block/stone/verlith_pillar_top"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "echoes:block/stone/verlith",
+    "side": "echoes:block/stone/verlith_llerae_moss",
+    "top": "echoes:block/stone/llerae_moss"
+  }
+}

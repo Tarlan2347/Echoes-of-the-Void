@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "echoes:block/shimmerdown_planks_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "echoes:block/shimmerdown_planks"
+    },
+    "axis=z": {
+      "model": "echoes:block/shimmerdown_planks_horizontal",
+      "x": 90
+    }
+  }
+}

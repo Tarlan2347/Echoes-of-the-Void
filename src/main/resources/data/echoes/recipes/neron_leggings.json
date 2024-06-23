@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:neron_ingot"
+    }
+  },
+  "result": {
+    "item": "echoes:neron_leggings"
+  }
+}

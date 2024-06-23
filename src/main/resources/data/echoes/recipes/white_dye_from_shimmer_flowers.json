@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "echoes:shimmer_flowers"
+    }
+  ],
+  "result": {
+    "item": "minecraft:white_dye",
+    "count": 2
+  }
+}

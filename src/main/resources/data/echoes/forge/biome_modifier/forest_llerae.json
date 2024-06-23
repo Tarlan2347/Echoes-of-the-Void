@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#echoes:is_llerae_forest",
+  "features": "echoes:forest_llerae",
+  "step": "vegetal_decoration"
+}

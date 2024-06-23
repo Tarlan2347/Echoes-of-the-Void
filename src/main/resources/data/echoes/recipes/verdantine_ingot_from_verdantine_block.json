@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:verdantine_block"
+    }
+  ],
+  "result": {
+    "item": "echoes:verdantine_ingot",
+    "count": 9
+  }
+}

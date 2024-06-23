@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes:block/tealite_slab"
+    },
+    "type=double": {
+      "model": "echoes:block/tealite_slab_double"
+    },
+    "type=top": {
+      "model": "echoes:block/tealite_slab_top"
+    }
+  }
+}

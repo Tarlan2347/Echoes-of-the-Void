@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/slab",
+	"textures": {
+		"side": "echoes:block/stone/umbrelith_slab_vertical",
+		"top": "echoes:block/stone/umbrelith_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#top"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"up": {"uv": [16, 0, 0, 16], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side"}
+			}
+		}
+	]
+}

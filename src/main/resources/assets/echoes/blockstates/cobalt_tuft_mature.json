@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "echoes:block/cobalt_tuft_mature_bottom"
+    },
+    "half=upper": {
+      "model": "echoes:block/cobalt_tuft_mature_top"
+    }
+  }
+}

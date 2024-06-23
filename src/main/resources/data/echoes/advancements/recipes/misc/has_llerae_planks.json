@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_llerae_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:llerae_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_llerae_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:llerae_slab",
+      "echoes:llerae_stairs",
+      "echoes:llerae_fence",
+      "echoes:llerae_fence_gate",
+      "echoes:llerae_door",
+      "echoes:llerae_trapdoor",
+      "echoes:llerae_button",
+      "echoes:llerae_pressure_plate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

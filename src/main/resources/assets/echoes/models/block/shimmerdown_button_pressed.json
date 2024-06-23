@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "echoes:block/wood/shimmerdown_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "echoes:block/wood/stripped_shimmerdown_log_top",
+    "side": "echoes:block/wood/stripped_shimmerdown_log_side"
+  }
+}

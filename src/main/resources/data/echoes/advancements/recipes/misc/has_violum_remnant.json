@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_violum_remnant": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:violum_remnant"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_violum_remnant"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:resonane",
+      "echoes:violum_nodule_from_violum_remnant"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "echoes:block/stone/umbrelith_block",
+    "side": "echoes:block/stone/cut_umbrelith",
+    "top": "echoes:block/stone/umbrelith_block"
+  }
+}

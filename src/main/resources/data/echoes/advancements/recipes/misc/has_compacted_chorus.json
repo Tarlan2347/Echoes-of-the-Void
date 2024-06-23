@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_compacted_chorus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:compacted_chorus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_compacted_chorus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:chorusite_ingot_from_smelting_compacted_chorus"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "cobalt_shimmerdown_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "item": "echoes:cobalt_shimmerdown_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "cobalt_shimmerdown_sapling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:blue_dye_from_cobalt_shimmerdown_sapling"
+    ]
+  },
+  "sends_telemetry_event": false
+}

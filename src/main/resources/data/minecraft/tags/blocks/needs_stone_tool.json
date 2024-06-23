@@ -1,0 +1,31 @@
+{
+  "values": [
+    "echoes:raw_verdantine_block",
+    "echoes:verdantine_block",
+    "echoes:chorusite_block",
+    "echoes:raw_neron_block",
+    "echoes:neron_block",
+    "echoes:raw_glarium_block",
+    "echoes:glarium_block",
+
+    "echoes:chlorium_block",
+    "echoes:cindrite_block",
+    "echoes:regite_block",
+
+    "echoes:resonane_block",
+    "echoes:umbrite_block",
+
+    "echoes:verdantine_ore",
+    "echoes:neron_ore",
+    "echoes:glarium_ore",
+
+    "echoes:chlorium_ore",
+    "echoes:cindrite_ore",
+    "echoes:deepslate_cindrite_ore",
+    "echoes:nether_cindrite_ore",
+    "echoes:regite_ore",
+    "echoes:umbrite_ore",
+    "echoes:deepslate_umbrite_ore",
+    "echoes:end_umbrite_ore"
+  ]
+}

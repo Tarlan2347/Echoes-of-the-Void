@@ -1,0 +1,13 @@
+{
+  "values": [
+    "echoes:raw_azuretine_block",
+    "echoes:azuretine_block",
+
+    "echoes:pearlum_block",
+    "echoes:xirium_block",
+
+    "echoes:azuretine_ore",
+    "echoes:pearlum_ore",
+    "echoes:xirium_ore"
+  ]
+}

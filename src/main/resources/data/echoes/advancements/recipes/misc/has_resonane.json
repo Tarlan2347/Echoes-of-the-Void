@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_resonane": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:resonane"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_resonane"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:resonane_from_resonane_block",
+      "echoes:resonane_block_from_resonane"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes:block/llerae_slab"
+    },
+    "type=double": {
+      "model": "echoes:block/llerae_planks"
+    },
+    "type=top": {
+      "model": "echoes:block/llerae_slab_top"
+    }
+  }
+}

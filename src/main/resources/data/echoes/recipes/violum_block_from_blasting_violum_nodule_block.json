@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1800,
+  "experience": 56.7,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "echoes:violum_nodule_block"
+  },
+  "result": "echoes:violum_block"
+}

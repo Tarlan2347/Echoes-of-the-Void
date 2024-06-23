@@ -1,0 +1,70 @@
+{
+  "name": "echoes:villages/barren/paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 40,
+      "element": {
+        "location": "echoes:villages/barren/terminators/terminator_shelter",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }},
+    {
+    "weight": 40,
+    "element": {
+      "location": "echoes:villages/barren/terminators/terminator_tower",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }},
+    {
+      "weight": 100,
+      "element": {
+        "location": "echoes:villages/barren/paths/path_straight_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }},
+    {
+      "weight": 80,
+      "element": {
+        "location": "echoes:villages/barren/paths/path_straight_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }},
+    {
+      "weight": 60,
+      "element": {
+        "location": "echoes:villages/barren/paths/path_straight_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }},
+    {
+      "weight": 80,
+      "element": {
+        "location": "echoes:villages/barren/paths/path_straight_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }},
+    {
+      "weight": 60,
+      "element": {
+        "location": "echoes:villages/barren/paths/path_turn_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }},
+    {
+    "weight": 60,
+    "element": {
+      "location": "echoes:villages/barren/paths/path_3_way_0",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }}
+  ]
+}

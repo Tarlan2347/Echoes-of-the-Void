@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_verdantine_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:verdantine_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdantine_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:verdantine_axe",
+      "echoes:verdantine_block_from_verdantine_ingot",
+      "echoes:verdantine_boots",
+      "echoes:verdantine_chestplate",
+      "echoes:verdantine_helmet",
+      "echoes:verdantine_hoe",
+      "echoes:verdantine_ingot_from_verdantine_block",
+      "echoes:verdantine_ingot_from_verdantine_nugget",
+      "echoes:verdantine_leggings",
+      "echoes:verdantine_nugget_from_verdantine_ingot",
+      "echoes:verdantine_pickaxe",
+      "echoes:verdantine_shovel",
+      "echoes:verdantine_sword",
+      "echoes:hopper_from_verdantine",
+      "echoes:shears_from_verdantine",
+      "echoes:stonecutter_from_verdantine"
+    ]
+  },
+  "sends_telemetry_event": false
+}

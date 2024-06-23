@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "echoes:buildings/small_buildings",
+      "weight": 4
+    },
+    {
+      "structure": "echoes:buildings/medium_buildings",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 950552683,
+    "spacing": 20,
+    "separation": 0
+  }
+}

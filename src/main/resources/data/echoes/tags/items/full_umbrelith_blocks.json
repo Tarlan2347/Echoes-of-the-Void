@@ -1,0 +1,24 @@
+{
+  "values": [
+    "echoes:umbrelith_block",
+    "echoes:framed_umbrelith",
+    "echoes:framed_cobbled_umbrelith",
+    "echoes:umbrelith_block_damaged",
+    "echoes:umbrelith_block_cracked",
+    "echoes:umbrelith_block_fractured",
+    "echoes:chiseled_umbrelith",
+    "echoes:umbrelith_bricks",
+    "echoes:umbrelith_tiles",
+    "echoes:three_by_three_umbrelith_tiles",
+    "echoes:umbrelith_panel",
+    "echoes:umbrelith_panel_inset",
+    "echoes:reinforced_umbrelith_panel",
+    "echoes:reinforced_umbrelith_panel_inset",
+    "echoes:fine_umbrelith_tiles",
+    "echoes:fine_umbrelith_bricks",
+    "echoes:patterned_umbrelith_tiles",
+    "echoes:cut_umbrelith",
+    "echoes:umbrelith_pillar",
+    "echoes:umbrelith_pillar_cross"
+  ]
+}

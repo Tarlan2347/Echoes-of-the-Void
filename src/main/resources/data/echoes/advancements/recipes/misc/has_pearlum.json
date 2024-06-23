@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pearlum": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:pearlum"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_pearlum"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:pearlum_from_pearlum_block",
+      "echoes:pearlum_block_from_pearlum"
+    ]
+  },
+  "sends_telemetry_event": false
+}

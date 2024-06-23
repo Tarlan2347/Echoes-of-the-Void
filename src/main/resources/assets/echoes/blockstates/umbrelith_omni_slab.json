@@ -1,0 +1,43 @@
+{
+  "variants": {
+    "facing=down,type=half": {
+      "model": "echoes:block/umbrelith_omni_slab_half_down"
+    },
+    "facing=east,type=half": {
+      "model": "echoes:block/umbrelith_omni_slab_half_east"
+    },
+    "facing=north,type=half": {
+      "model": "echoes:block/umbrelith_omni_slab_half_north"
+    },
+    "facing=south,type=half": {
+      "model": "echoes:block/umbrelith_omni_slab_half_south"
+    },
+    "facing=up,type=half": {
+      "model": "echoes:block/umbrelith_omni_slab_half_up"
+    },
+    "facing=west,type=half": {
+      "model": "echoes:block/umbrelith_omni_slab_half_west"
+    },
+
+
+
+    "facing=down,type=double": {
+      "model": "echoes:block/umbrelith_omni_slab_double_vertical"
+    },
+    "facing=up,type=double": {
+      "model": "echoes:block/umbrelith_omni_slab_double_vertical"
+    },
+    "facing=east,type=double": {
+      "model": "echoes:block/umbrelith_omni_slab_double_eastwest"
+    },
+    "facing=west,type=double": {
+      "model": "echoes:block/umbrelith_omni_slab_double_eastwest"
+    },
+    "facing=north,type=double": {
+      "model": "echoes:block/umbrelith_omni_slab_double_northsouth"
+    },
+    "facing=south,type=double": {
+      "model": "echoes:block/umbrelith_omni_slab_double_northsouth"
+    }
+  }
+}

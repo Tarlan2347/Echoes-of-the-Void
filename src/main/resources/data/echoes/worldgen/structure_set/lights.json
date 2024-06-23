@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "echoes:lights",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 850498628,
+    "spacing": 10,
+    "separation": 0
+  }
+}

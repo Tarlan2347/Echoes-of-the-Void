@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:cobbled_umbrelith"
+    },
+    {
+      "item": "echoes:cobbled_umbrelith"
+    }
+  ],
+  "result": {
+    "item": "echoes:umbrelith",
+    "count": 1
+  }
+}

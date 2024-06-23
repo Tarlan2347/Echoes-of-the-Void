@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "echoes:villages/village_barren",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 11111111,
+    "spread_type": "triangular",
+    "spacing": 64,
+    "separation": 8
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_violum_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:violum_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_violum_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:violum_axe",
+      "echoes:violum_axe_smithing",
+      "echoes:violum_block_from_violum_ingot",
+      "echoes:violum_boots",
+      "echoes:violum_boots_smithing",
+      "echoes:violum_chestplate",
+      "echoes:violum_chestplate_smithing",
+      "echoes:violum_helmet",
+      "echoes:violum_helmet_smithing",
+      "echoes:violum_hoe",
+      "echoes:violum_hoe_smithing",
+      "echoes:violum_ingot_from_violum_block",
+      "echoes:violum_ingot_from_violum_nugget",
+      "echoes:violum_leggings",
+      "echoes:violum_leggings_smithing",
+      "echoes:violum_nugget_from_violum_ingot",
+      "echoes:violum_pickaxe",
+      "echoes:violum_pickaxe_smithing",
+      "echoes:violum_shovel",
+      "echoes:violum_shovel_smithing",
+      "echoes:violum_sword",
+      "echoes:violum_sword_smithing",
+      "echoes:violum_smithing_upgrade"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:chorusite_ingot"
+    }
+  },
+  "result": {
+    "item": "echoes:chorusite_helmet"
+  }
+}

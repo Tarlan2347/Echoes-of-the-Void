@@ -1,0 +1,71 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glarium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:glarium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_glarium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:glarium_block_from_glarium_ingot",
+      "echoes:glarium_ingot_from_glarium_block",
+      "echoes:glarium_ingot_from_glarium_nugget",
+      "echoes:glarium_nugget_from_glarium_ingot",
+      "echoes:glarium_lamp",
+      "echoes:large_glarium_lamp",
+      "echoes:monochrome_glarium_block",
+      "echoes:monochrome_glarium_lamp",
+      "echoes:large_monochrome_glarium_lamp",
+      "echoes:red_glarium_block",
+      "echoes:red_glarium_lamp",
+      "echoes:large_red_glarium_lamp",
+      "echoes:orange_glarium_block",
+      "echoes:orange_glarium_lamp",
+      "echoes:large_orange_glarium_lamp",
+      "echoes:yellow_glarium_block",
+      "echoes:yellow_glarium_lamp",
+      "echoes:large_yellow_glarium_lamp",
+      "echoes:lime_glarium_block",
+      "echoes:lime_glarium_lamp",
+      "echoes:large_lime_glarium_lamp",
+      "echoes:green_glarium_block",
+      "echoes:green_glarium_lamp",
+      "echoes:large_green_glarium_lamp",
+      "echoes:light_blue_glarium_block",
+      "echoes:light_blue_glarium_lamp",
+      "echoes:large_light_blue_glarium_lamp",
+      "echoes:blue_glarium_block",
+      "echoes:blue_glarium_lamp",
+      "echoes:large_blue_glarium_lamp",
+      "echoes:purple_glarium_block",
+      "echoes:purple_glarium_lamp",
+      "echoes:large_purple_glarium_lamp",
+      "echoes:magenta_glarium_block",
+      "echoes:magenta_glarium_lamp",
+      "echoes:large_magenta_glarium_lamp",
+      "echoes:pink_glarium_block",
+      "echoes:pink_glarium_lamp",
+      "echoes:large_pink_glarium_lamp",
+      "echoes:brown_glarium_block",
+      "echoes:brown_glarium_lamp",
+      "echoes:large_brown_glarium_lamp",
+      "echoes:glarium_ingot_from_glarium_lamp_stonecutting",
+      "echoes:glarium_ingots_from_large_glarium_lamp_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

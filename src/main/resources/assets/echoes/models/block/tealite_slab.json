@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "echoes:block/stone/tealite_block",
+    "side": "echoes:block/stone/tealite_slab",
+    "top": "echoes:block/stone/tealite_block"
+  }
+}

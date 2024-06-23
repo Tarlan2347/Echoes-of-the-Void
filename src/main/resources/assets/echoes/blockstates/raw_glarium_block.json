@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "echoes:block/raw_glarium_block"
+    },
+    "lit=true": {
+      "model": "echoes:block/raw_glarium_block_on"
+    }
+  }
+}

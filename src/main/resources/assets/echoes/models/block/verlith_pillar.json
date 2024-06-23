@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "echoes:block/stone/verlith_pillar_top",
+    "side": "echoes:block/stone/verlith_pillar"
+  }
+}

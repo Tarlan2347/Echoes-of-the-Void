@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "echoes:block/wood/llerae_planks",
+    "side": "echoes:block/wood/llerae_planks"
+  }
+}

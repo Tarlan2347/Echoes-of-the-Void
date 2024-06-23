@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_magmar": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:magmar"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_magmar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:magmar_from_magmar_block",
+      "echoes:magmar_block_from_magmar"
+    ]
+  },
+  "sends_telemetry_event": false
+}

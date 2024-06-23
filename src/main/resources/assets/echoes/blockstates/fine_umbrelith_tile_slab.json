@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes:block/fine_umbrelith_tile_slab"
+    },
+    "type=double": {
+      "model": "echoes:block/fine_umbrelith_tile_slab_double"
+    },
+    "type=top": {
+      "model": "echoes:block/fine_umbrelith_tile_slab_top"
+    }
+  }
+}

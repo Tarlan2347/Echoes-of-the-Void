@@ -1,0 +1,24 @@
+{
+  "name": "echoes:villages/barren/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+    "weight": 3,
+    "element": {
+      "location": "echoes:villages/barren/town_centers/town_center_0",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },
+    {
+    "weight": 1,
+    "element": {
+      "location": "echoes:villages/barren/town_centers/town_center_1",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  }
+  ]
+}

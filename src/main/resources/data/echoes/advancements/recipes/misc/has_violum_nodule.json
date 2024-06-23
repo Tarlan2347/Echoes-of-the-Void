@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_violum_nodule": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:violum_nodule"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_violum_nodule"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:violum_nodule_block_from_violum_nodule",
+      "echoes:violum_nodule_from_violum_nodule_block",
+      "echoes:violum_ingot_from_blasting_violum_nodule",
+      "echoes:violum_ingot_from_smelting_violum_nodule",
+      "echoes:violum_block_from_blasting_violum_nodule_block",
+      "echoes:violum_block_from_smelting_violum_nodule_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

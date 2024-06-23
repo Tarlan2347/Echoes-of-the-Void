@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chlorium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:chlorium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_chlorium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:chlorium_axe",
+      "echoes:chlorium_block_from_chlorium",
+      "echoes:chlorium_from_chlorium_block",
+      "echoes:chlorium_hoe",
+      "echoes:chlorium_pickaxe",
+      "echoes:chlorium_shovel",
+      "echoes:chlorium_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

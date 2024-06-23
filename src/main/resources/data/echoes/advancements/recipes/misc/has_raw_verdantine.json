@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_verdantine": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:raw_verdantine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_verdantine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:verdantine_block_from_blasting_raw_verdantine_block",
+      "echoes:verdantine_block_from_smelting_raw_verdantine_block",
+      "echoes:verdantine_ingot_from_blasting_raw_verdantine",
+      "echoes:verdantine_ingot_from_smelting_raw_verdantine"
+    ]
+  },
+  "sends_telemetry_event": false
+}

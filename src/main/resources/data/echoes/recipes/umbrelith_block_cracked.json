@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "echoes:umbrelith_block_damaged"
+  },
+  "result": "echoes:umbrelith_block_cracked"
+}

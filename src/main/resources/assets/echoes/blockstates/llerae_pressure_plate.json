@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "echoes:block/llerae_pressure_plate"
+    },
+    "powered=true": {
+      "model": "echoes:block/llerae_pressure_plate_down"
+    }
+  }
+}`

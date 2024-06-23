@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_umbrite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:umbrite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_umbrite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:umbrite_from_umbrite_block",
+      "echoes:umbrite_block_from_umbrite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

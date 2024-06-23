@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "echoes:block/stone/oder/oder_bricks",
+    "side": "echoes:block/stone/oder/oder_bricks",
+    "top": "echoes:block/stone/oder/oder_bricks"
+  }
+}

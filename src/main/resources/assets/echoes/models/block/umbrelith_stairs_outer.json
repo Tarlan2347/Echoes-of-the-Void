@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "top": "echoes:block/stone/umbrelith_block",
+    "side": "echoes:block/stone/umbrelith_slab",
+    "bottom": "echoes:block/stone/umbrelith_block"
+  }
+}

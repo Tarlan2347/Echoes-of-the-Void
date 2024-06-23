@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:violum_nodule_block"
+    }
+  ],
+  "result": {
+    "item": "echoes:violum_nodule",
+    "count": 9
+  }
+}

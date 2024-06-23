@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:llerae_fruit"
+    },
+    {
+      "tag": "echoes:shimmer_flowers"
+    }
+  ],
+  "result": {
+    "item": "echoes:shimmer_stuffed_llerae",
+    "count": 1
+  }
+}

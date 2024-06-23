@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:azuretine_ingot"
+    }
+  },
+  "result": {
+    "item": "echoes:azuretine_helmet"
+  }
+}

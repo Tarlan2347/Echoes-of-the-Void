@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "echoes:block/large_light_blue_glarium_lamp"
+    },
+    "lit=true": {
+      "model": "echoes:block/large_light_blue_glarium_lamp_on"
+    }
+  }
+}

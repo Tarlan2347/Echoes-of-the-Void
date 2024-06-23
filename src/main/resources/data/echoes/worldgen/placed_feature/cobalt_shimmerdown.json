@@ -1,0 +1,49 @@
+
+{
+  "feature": "echoes:cobalt_shimmerdown",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 6,
+            "data": 6
+          },
+          {
+            "weight": 5,
+            "data": 3
+          },
+          {
+            "weight": 4,
+            "data": 2
+          },
+          {
+            "weight": 3,
+            "data": 1
+          },
+          {
+            "weight": 1,
+            "data": 0
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "echoes:cobalt_shimmerdown_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    }
+  ]
+}

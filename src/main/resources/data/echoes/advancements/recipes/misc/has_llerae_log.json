@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_llerae_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:llerae_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_llerae_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:llerae_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}
