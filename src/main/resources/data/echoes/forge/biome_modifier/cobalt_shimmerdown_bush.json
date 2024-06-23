@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#echoes:is_cobalt_shimmer_forest",
+  "features": "echoes:cobalt_shimmerdown_bush",
+  "step": "vegetal_decoration"
+}

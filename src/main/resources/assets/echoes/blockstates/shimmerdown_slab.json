@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes:block/shimmerdown_slab"
+    },
+    "type=double": {
+      "model": "echoes:block/shimmerdown_planks"
+    },
+    "type=top": {
+      "model": "echoes:block/shimmerdown_slab_top"
+    }
+  }
+}

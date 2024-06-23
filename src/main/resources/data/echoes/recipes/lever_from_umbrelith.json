@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "$",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:umbrelith"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:lever"
+  }
+}

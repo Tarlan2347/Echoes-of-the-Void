@@ -1,0 +1,18 @@
+{
+  "values": [
+    "echoes:region_umbrelith",
+    "echoes:region_verlith",
+    "echoes:region_tealite",
+    "echoes:region_palestone",
+
+    "echoes:llerae_forest_umbrelith",
+    "echoes:llerae_forest_verlith",
+    "echoes:llerae_forest_tealite",
+    "echoes:llerae_forest_palestone",
+
+    "echoes:cobalt_shimmer_forest_umbrelith",
+    "echoes:cobalt_shimmer_forest_verlith",
+    "echoes:cobalt_shimmer_forest_tealite",
+    "echoes:cobalt_shimmer_forest_palestone"
+  ]
+}

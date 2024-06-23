@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "n": {
+      "item": "echoes:neron_ingot"
+    }
+  },
+  "pattern": [
+    "pnp",
+    "ppp",
+    " p "
+  ],
+  "result": {
+    "item": "minecraft:shield"
+  },
+  "show_notification": true
+}

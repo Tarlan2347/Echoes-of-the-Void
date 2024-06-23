@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "llerae_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:llerae_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "llerae_sapling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:black_dye_from_llerae_sapling"
+    ]
+  },
+  "sends_telemetry_event": false
+}

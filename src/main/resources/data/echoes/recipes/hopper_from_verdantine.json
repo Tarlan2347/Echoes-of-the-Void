@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "v": {
+      "item": "echoes:verdantine_ingot"
+    }
+  },
+  "pattern": [
+    "v v",
+    "vcv",
+    " v "
+  ],
+  "result": {
+    "item": "minecraft:hopper"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:umbrite"
+    }
+  },
+  "result": {
+    "item": "echoes:umbrite_block"
+  }
+}

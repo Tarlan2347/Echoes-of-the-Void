@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "echoes:violum_ingot"
+  },
+  "base": {
+    "item": "echoes:perialight_leggings"
+  },
+  "result": {
+    "item": "echoes:violum_leggings"
+  },
+  "template": {
+    "item": "echoes:violum_smithing_upgrade"
+  }
+}

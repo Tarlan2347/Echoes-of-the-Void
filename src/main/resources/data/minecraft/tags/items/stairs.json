@@ -1,0 +1,20 @@
+{
+  "values":[
+    "echoes:rough_verlith_stairs",
+    "echoes:verlith_stairs",
+    "echoes:rough_tealite_stairs",
+    "echoes:tealite_stairs",
+    "echoes:rough_palestone_stairs",
+    "echoes:palestone_stairs",
+    "echoes:rough_umbrelith_stairs",
+    "echoes:umbrelith_stairs",
+    "echoes:smooth_umbrelith_stairs",
+    "echoes:umbrelith_brick_stairs",
+    "echoes:umbrelith_tile_stairs",
+    "echoes:fine_umbrelith_tile_stairs",
+    "echoes:fine_umbrelith_brick_stairs",
+    "echoes:umbrelith_pillar_stairs",
+    "echoes:llerae_stairs",
+    "echoes:shimmerdown_stairs"
+  ]
+}

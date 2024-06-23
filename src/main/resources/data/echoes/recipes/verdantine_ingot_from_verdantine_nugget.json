@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:verdantine_nugget"
+    }
+  },
+  "result": {
+    "item": "echoes:verdantine_ingot"
+  }
+}

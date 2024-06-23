@@ -1,0 +1,28 @@
+{
+  "values": [
+    "echoes:chorus_block",
+    "echoes:chorus_planks",
+    "echoes:llerae_log",
+    "echoes:stripped_llerae_log",
+    "echoes:llerae_planks",
+    "echoes:llerae_slab",
+    "echoes:llerae_stairs",
+    "echoes:llerae_fence",
+    "echoes:llerae_fence_gate",
+    "echoes:llerae_door",
+    "echoes:llerae_trapdoor",
+    "echoes:llerae_button",
+    "echoes:llerae_pressure_plate",
+    "echoes:shimmerdown_log",
+    "echoes:stripped_shimmerdown_log",
+    "echoes:shimmerdown_planks",
+    "echoes:shimmerdown_slab",
+    "echoes:shimmerdown_stairs",
+    "echoes:shimmerdown_fence",
+    "echoes:shimmerdown_fence_gate",
+    "echoes:shimmerdown_door",
+    "echoes:shimmerdown_trapdoor",
+    "echoes:shimmerdown_button",
+    "echoes:shimmerdown_pressure_plate"
+  ]
+}

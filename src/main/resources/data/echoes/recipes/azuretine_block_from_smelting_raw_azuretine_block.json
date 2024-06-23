@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1800,
+  "experience": 6.3,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "echoes:raw_azuretine_block"
+  },
+  "result": "echoes:azuretine_block"
+}

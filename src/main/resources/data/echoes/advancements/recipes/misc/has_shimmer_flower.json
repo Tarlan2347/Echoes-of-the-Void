@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "shimmer_flowers": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "echoes:shimmer_flowers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "shimmer_flowers"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:shimmer_stuffed_llerae",
+      "echoes:white_dye_from_shimmer_flowers"
+    ]
+  },
+  "sends_telemetry_event": false
+}

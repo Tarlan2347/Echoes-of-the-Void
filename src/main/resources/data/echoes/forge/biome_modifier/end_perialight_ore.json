@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "echoes:end_perialight_ore",
+  "biomes": "#minecraft:is_end",
+  "step": "underground_ores"
+}

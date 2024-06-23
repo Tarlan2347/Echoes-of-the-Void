@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:regite_block"
+    }
+  ],
+  "result": {
+    "item": "echoes:regite",
+    "count": 9
+  }
+}

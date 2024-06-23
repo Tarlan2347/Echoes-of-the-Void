@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:chorus_block"
+    }
+  ],
+  "result": {
+    "item": "echoes:chorus_planks",
+    "count": 2
+  }
+}

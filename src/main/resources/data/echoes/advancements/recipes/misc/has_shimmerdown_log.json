@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shimmerdown_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:shimmerdown_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_shimmerdown_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:shimmerdown_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

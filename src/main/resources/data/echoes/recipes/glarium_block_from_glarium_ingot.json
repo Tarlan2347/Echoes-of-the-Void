@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:glarium_ingot"
+    }
+  },
+  "result": {
+    "item": "echoes:glarium_block"
+  }
+}

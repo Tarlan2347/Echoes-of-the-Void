@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shimmerdown_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:shimmerdown_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_shimmerdown_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:shimmerdown_slab",
+      "echoes:shimmerdown_stairs",
+      "echoes:shimmerdown_fence",
+      "echoes:shimmerdown_fence_gate",
+      "echoes:shimmerdown_door",
+      "echoes:shimmerdown_trapdoor",
+      "echoes:shimmerdown_button",
+      "echoes:shimmerdown_pressure_plate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

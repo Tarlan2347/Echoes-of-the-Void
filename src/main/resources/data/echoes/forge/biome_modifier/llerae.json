@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#echoes:is_the_void",
+  "features": "echoes:llerae",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_umbrelith": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:umbrelith"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_umbrelith"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:lever_from_umbrelith",
+      "echoes:cobbled_umbrelith_from_umbrelith_crafting",
+      "echoes:umbrelith_from_cobbled_umbrelith_crafting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

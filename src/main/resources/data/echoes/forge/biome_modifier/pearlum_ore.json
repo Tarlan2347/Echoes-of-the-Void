@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "echoes:pearlum_ore",
+  "biomes": "#echoes:is_the_void",
+  "step": "underground_ores"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "u": {
+      "item": "echoes:smooth_umbrelith"
+    },
+    "g": {
+      "item": "echoes:glarium_ingot"
+    }
+  },
+  "pattern": [
+    "uuu",
+    "ugu",
+    "uuu"
+  ],
+  "result": {
+    "item": "echoes:glarium_lamp"
+  },
+  "show_notification": true
+}

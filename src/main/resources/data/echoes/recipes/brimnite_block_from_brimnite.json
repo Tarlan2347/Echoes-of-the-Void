@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:brimnite"
+    }
+  },
+  "result": {
+    "item": "echoes:brimnite_block"
+  }
+}

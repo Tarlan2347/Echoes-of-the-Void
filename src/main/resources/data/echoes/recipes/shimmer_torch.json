@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "$"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:cobalt_shimmer_flower"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "echoes:shimmer_torch",
+    "count": 2
+  }
+}

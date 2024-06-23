@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "echoes:block/wall_shimmer_torch"
+    },
+    "facing=north": {
+      "model": "echoes:block/wall_shimmer_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "echoes:block/wall_shimmer_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "echoes:block/wall_shimmer_torch",
+      "y": 180
+    }
+  }
+}

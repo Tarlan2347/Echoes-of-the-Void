@@ -1,0 +1,228 @@
+{
+  "type": "echoes:the_void",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "echoes:the_void",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "echoes:region_umbrelith",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -2,
+              1
+            ],
+            "erosion": [
+              -0.7,
+              0.7
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:llerae_forest_umbrelith",
+          "parameters": {
+            "temperature": 2,
+            "humidity": 0.3,
+            "continentalness": [
+              -2,
+              1
+            ],
+            "erosion": [
+              -0.7,
+              0.7
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:cobalt_shimmer_forest_umbrelith",
+          "parameters": {
+            "temperature": -2,
+            "humidity": -0.3,
+            "continentalness": [
+              -2,
+              1
+            ],
+            "erosion": [
+              -0.7,
+              0.7
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:region_tealite",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              1.5,
+              2
+            ],
+            "erosion": [
+              -1.5,
+              -1.2
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:llerae_forest_tealite",
+          "parameters": {
+            "temperature": -1,
+            "humidity": 0.3,
+            "continentalness": [
+              1.5,
+              2
+            ],
+            "erosion": [
+              -1.5,
+              -1.2
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:cobalt_shimmer_forest_tealite",
+          "parameters": {
+            "temperature": 1,
+            "humidity": -0.3,
+            "continentalness": [
+              1.5,
+              2
+            ],
+            "erosion": [
+              -1.5,
+              -1.2
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:region_verlith",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              1.5,
+              2
+            ],
+            "erosion": [
+              1.2,
+              1.5
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:llerae_forest_verlith",
+          "parameters": {
+            "temperature": -1,
+            "humidity": 0.3,
+            "continentalness": [
+              1.5,
+              2
+            ],
+            "erosion": [
+              1.2,
+              1.5
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:cobalt_shimmer_forest_verlith",
+          "parameters": {
+            "temperature": 1,
+            "humidity": -0.3,
+            "continentalness": [
+              1.5,
+              2
+            ],
+            "erosion": [
+              1.2,
+              1.5
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:region_palestone",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -2,
+              -0.5
+            ],
+            "erosion": [
+              1,
+              1.5
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:llerae_forest_palestone",
+          "parameters": {
+            "temperature": -1,
+            "humidity": 0.3,
+            "continentalness": [
+              -2,
+              -0.5
+            ],
+            "erosion": [
+              1.5,
+              2
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "echoes:cobalt_shimmer_forest_palestone",
+          "parameters": {
+            "temperature": 1,
+            "humidity": -0.3,
+            "continentalness": [
+              -2,
+              -0.5
+            ],
+            "erosion": [
+              1.5,
+              2
+            ],
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

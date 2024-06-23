@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "llerae_fruit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "echoes:llerae_fruit"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "llerae_fruit"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "echoes:baked_llerae_fruit",
+      "echoes:shimmer_stuffed_llerae",
+      "echoes:blue_dye_from_llerae_fruit"
+    ]
+  },
+  "sends_telemetry_event": false
+}

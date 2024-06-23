@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    " $ ",
+    " $ "
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:verdantine_ingot"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "echoes:verdantine_pickaxe"
+  }
+}
