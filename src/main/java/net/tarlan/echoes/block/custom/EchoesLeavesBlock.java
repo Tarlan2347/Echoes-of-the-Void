@@ -85,7 +85,7 @@ public class EchoesLeavesBlock extends Block implements SimpleWaterloggedBlock, 
             }
         }
         if (this.defaultBlockState().is(EchoesBlocks.FLOWERING_COBALT_SHIMMERDOWN_LEAVES.get())) {
-            if (pRandom.nextInt(16) == 0) {
+            if (pRandom.nextInt(8) == 0) {
                 pLevel.setBlockAndUpdate(pPos, EchoesBlocks.COBALT_SHIMMERDOWN_LEAVES.get().withPropertiesOf(pState));
                 updateDistance(pState, pLevel, pPos);
             }
@@ -116,8 +116,8 @@ public class EchoesLeavesBlock extends Block implements SimpleWaterloggedBlock, 
             pLevel.scheduleTick(pCurrentPos, Fluids.WATER, Fluids.WATER.getTickDelay(pLevel));
         }
 
-        int i = getDistanceAt(pFacingState) + 1;
-        if (i != 1 || pState.getValue(ECHOES_DISTANCE) != i) {
+        int distance = getDistanceAt(pFacingState) + 1;
+        if (distance != 1 || pState.getValue(ECHOES_DISTANCE) != distance) {
             pLevel.scheduleTick(pCurrentPos, this, 1);
         }
 
@@ -135,7 +135,6 @@ public class EchoesLeavesBlock extends Block implements SimpleWaterloggedBlock, 
                 break;
             }
         }
-
         return pState.setValue(ECHOES_DISTANCE, Integer.valueOf(i));
     }
 

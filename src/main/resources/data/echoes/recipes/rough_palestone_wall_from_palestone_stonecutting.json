@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "echoes:palestone"
-  },
-  "result": "echoes:rough_palestone_wall"
-}

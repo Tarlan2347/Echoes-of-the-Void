@@ -2,6 +2,7 @@
   "values": [
     "echoes:violum_deposit",
     "echoes:violum_nodule_block",
-    "echoes:violum_block"
+    "echoes:violum_block",
+    "echoes:monolith"
   ]
 }

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": [{
-    "tag": "echoes:full_umbrelith_blocks"
-  }],
-  "result": "echoes:smooth_umbrelith"
-}

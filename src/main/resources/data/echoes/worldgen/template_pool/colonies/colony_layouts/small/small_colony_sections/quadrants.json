@@ -1,0 +1,15 @@
+{
+  "name": "echoes:colonies/colony_layouts/small/small_colony_sections/quadrants",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes:colonies/colony_layouts/small/small_colony_sections/quadrants/small_colony_quadrant_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

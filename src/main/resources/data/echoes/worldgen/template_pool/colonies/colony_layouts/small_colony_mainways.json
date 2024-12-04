@@ -1,0 +1,51 @@
+{
+  "name": "echoes:colonies/colony_layouts/small/small_colony_mainways",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes:colonies/colony_layouts/small/small_colony_mainways/cross/small_cross_mainway_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes:colonies/colony_layouts/small/small_colony_mainways/tee/small_tee_mainway_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes:colonies/colony_layouts/small/small_colony_mainways/straight/small_straight_mainway_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes:colonies/colony_layouts/small/small_colony_mainways/bend/small_bend_mainway_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes:colonies/colony_layouts/small/small_colony_mainways/end/small_end_mainway_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

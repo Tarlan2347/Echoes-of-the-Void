@@ -24,7 +24,8 @@
       "echoes:glarium_block_from_blasting_raw_glarium_block",
       "echoes:glarium_block_from_smelting_raw_glarium_block",
       "echoes:glarium_ingot_from_blasting_raw_glarium",
-      "echoes:glarium_ingot_from_smelting_raw_glarium"
+      "echoes:glarium_ingot_from_smelting_raw_glarium",
+      "echoes:umbrelith_furnace_glarium_ingot_from_raw_glarium"
     ]
   },
   "sends_telemetry_event": false

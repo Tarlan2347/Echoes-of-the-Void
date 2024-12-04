@@ -59,7 +59,9 @@ public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
         this.doubleX = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
         this.doubleY = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     }
-
+    public boolean useShapeForLightOcclusion(BlockState pState) {
+        return pState.getValue(TYPE) != EchoesSlabType.DOUBLE;
+    }
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction direction = pState.getValue(FACING);
         EchoesSlabType type = pState.getValue(TYPE);
@@ -90,6 +92,7 @@ public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
             return this.halfUpAabb;
         }
     }
+    //TODO Add in-game overlay to show either a block preview or a click-location section outline.
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         LevelAccessor levelaccessor = pContext.getLevel();

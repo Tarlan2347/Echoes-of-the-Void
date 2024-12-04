@@ -1,0 +1,13 @@
+{
+  "type": "echoes:umbrelith_furnace",
+  "smeltTime": 25,
+  "ingredients": [
+    {
+      "item": "echoes:llerae_fruit"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "echoes:baked_llerae_fruit"
+  }
+}

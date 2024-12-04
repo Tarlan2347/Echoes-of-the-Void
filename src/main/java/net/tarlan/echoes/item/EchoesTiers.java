@@ -15,11 +15,11 @@ public enum EchoesTiers implements Tier {
     CHLORIUM(1, 128, 9.0F, 0.0F, 20, Ingredient.of(EchoesItems.CHLORIUM.get()), BlockTags.NEEDS_STONE_TOOL),
     CINDRITE(2, 256, 6.0F, 2.0F, 15, Ingredient.of(EchoesItems.CINDRITE.get()), BlockTags.NEEDS_IRON_TOOL),
     CHORUSITE(2, 256, 6.0F, 2.0F, 10, Ingredient.of(EchoesItems.CHORUSITE_INGOT.get()), BlockTags.NEEDS_IRON_TOOL),
-    NERON(2, 512, 7.0F, 2.0F, 10, Ingredient.of(EchoesItems.NERON_INGOT.get()), BlockTags.NEEDS_IRON_TOOL),
-    AZURETINE(3, 1028, 9.0F, 3.0F, 10, Ingredient.of(EchoesItems.AZURETINE_INGOT.get()), BlockTags.NEEDS_DIAMOND_TOOL),
-    XIRIUM(3, 768, 11.0F, 4.0F, 15, Ingredient.of(EchoesItems.XIRIUM.get()), BlockTags.NEEDS_DIAMOND_TOOL),
-    PERIALIGHT(4, 2048, 13.0F, 5.0F, 15, Ingredient.of(EchoesItems.PERIALIGHT.get()), Tags.Blocks.NEEDS_NETHERITE_TOOL),
-    VIOLUM(5, 4096, 15.0F, 6.0F, 20, Ingredient.of(EchoesItems.VIOLUM_INGOT.get()), EchoesTags.Blocks.NEEDS_VIOLUM_TOOL);
+    NERON(2, 512, 9.0F, 2.0F, 10, Ingredient.of(EchoesItems.NERON_INGOT.get()), BlockTags.NEEDS_IRON_TOOL),
+    AZURETINE(3, 1028, 18.0F, 3.0F, 10, Ingredient.of(EchoesItems.AZURETINE_INGOT.get()), BlockTags.NEEDS_DIAMOND_TOOL),
+    XIRIUM(3, 768, 24.0F, 4.0F, 15, Ingredient.of(EchoesItems.XIRIUM.get()), BlockTags.NEEDS_DIAMOND_TOOL),
+    PERIALIGHT(4, 2048, 39.0F, 5.0F, 15, Ingredient.of(EchoesItems.PERIALIGHT.get()), Tags.Blocks.NEEDS_NETHERITE_TOOL),
+    VIOLUM(5, 4096, 60.0F, 6.0F, 20, Ingredient.of(EchoesItems.VIOLUM_INGOT.get()), EchoesTags.Blocks.NEEDS_VIOLUM_TOOL);
 
     private final int level;
     private final int uses;

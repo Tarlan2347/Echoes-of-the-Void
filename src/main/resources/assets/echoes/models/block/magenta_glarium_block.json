@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "echoes:block/resource_blocks/magenta_glarium_block"
+    "all": "echoes:block/glarium/magenta_glarium_block"
   }
 }

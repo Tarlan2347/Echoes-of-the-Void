@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "echoes:bluestone"
-  },
-  "result": "echoes:polished_bluestone"
-}

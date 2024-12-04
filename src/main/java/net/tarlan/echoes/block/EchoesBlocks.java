@@ -22,6 +22,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tarlan.echoes.Echoes;
 import net.tarlan.echoes.block.custom.*;
+import net.tarlan.echoes.sounds.EchoesSounds;
 import net.tarlan.echoes.util.EchoesTags;
 import net.tarlan.echoes.util.EchoesWoodType;
 import net.tarlan.echoes.worldgen.tree.CobaltShimmerdownTreeGrower;
@@ -44,13 +45,13 @@ public class EchoesBlocks {
     public static final RegistryObject<Block> AZURETINE_BLOCK = registerBlock("azuretine_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK).strength(18,6).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RAW_NERON_BLOCK = registerBlock("raw_neron_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).strength(5,6).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> NERON_BLOCK = registerBlock("neron_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).strength(5,6).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> VIOLUM_NODULE_BLOCK = registerBlock("violum_nodule_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK).strength(50,1200).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> VIOLUM_BLOCK = registerBlock("violum_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK).strength(100,1200).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> VIOLUM_NODULE_BLOCK = registerBlock("violum_nodule_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK).strength(200,1200).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> VIOLUM_BLOCK = registerBlock("violum_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(EchoesSounds.VIOLUM_SOUNDS).strength(300,1200).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHLORIUM_BLOCK = registerBlock("chlorium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).sound(SoundType.STONE).strength(3,6).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CINDRITE_BLOCK = registerBlock("cindrite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.STONE).strength(3,6).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MAGMAR_BLOCK = registerBlock("magmar_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).sound(SoundType.STONE).strength(1,6).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PEARLUM_BLOCK = registerBlock("pearlum_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.STONE).strength(3,6).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> PERIALIGHT_BLOCK = registerBlock("perialight_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).strength(50,6).requiresCorrectToolForDrops().emissiveRendering(EchoesBlocks::always)) {
+    public static final RegistryObject<Block> PERIALIGHT_BLOCK = registerBlock("perialight_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).strength(100,6).requiresCorrectToolForDrops().emissiveRendering(EchoesBlocks::always)) {
         @Override public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {return 15;}});
     public static final RegistryObject<Block> REGITE_BLOCK = registerBlock("regite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.STONE).strength(1,6).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> XIRIUM_BLOCK = registerBlock("xirium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.STONE).strength(3,6).requiresCorrectToolForDrops()));
@@ -60,7 +61,6 @@ public class EchoesBlocks {
     public static final RegistryObject<Block> UMBRITE_BLOCK = registerBlock("umbrite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).sound(SoundType.STONE).strength(3,6).requiresCorrectToolForDrops()));
 
     //STONE
-    //TODO: Add Red, Orange, Yellow, Lime, Green, Cyan, Light Blue, Blue, Purple, Magenta, Pink, Brown, & Gray Palestone Variants
     public static final RegistryObject<Block> VERLITH = registerBlock("verlith", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.METAL).strength(2,12).requiresCorrectToolForDrops()));
     public static final RegistryObject<SlabBlock> ROUGH_VERLITH_SLAB = registerBlock("rough_verlith_slab", () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.METAL).strength(2,12).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ROUGH_VERLITH_STAIRS = registerBlock("rough_verlith_stairs", () -> new StairBlock(() -> EchoesBlocks.VERLITH.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.METAL).strength(2,12).requiresCorrectToolForDrops()));
@@ -167,7 +167,7 @@ public class EchoesBlocks {
 
 
 
-    public static final RegistryObject<Block> MONOLITH = registerBlock("monolith", () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(300,12000).requiresCorrectToolForDrops().isRedstoneConductor(EchoesBlocks::never)));
+    public static final RegistryObject<Block> MONOLITH = registerBlock("monolith", () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6000,12000).requiresCorrectToolForDrops().isRedstoneConductor(EchoesBlocks::never)));
 
     public static final RegistryObject<Block> VOID_PORTAL = registerBlock("void_portal", () -> new EchoesPortalBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3,12).noLootTable().noOcclusion().noCollission()));
     //public static final Block END_PORTAL = register("end_portal", new EndPortalBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).noCollission().lightLevel((p_152690_) -> {return 15;
@@ -409,6 +409,10 @@ public class EchoesBlocks {
         @Override public float getMaxVerticalOffset() {return 0.05f;}
         @Override public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {return 6;}});
 
+//MACHINES
+    //public static final Block STONECUTTER = register("stonecutter", new StonecutterBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.5F)));
+    public static final RegistryObject<Block> BANDSAW = registerBlock("bandsaw", () -> new BandsawBlock(BlockBehaviour.Properties.of().noOcclusion().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(8f,32)));
+    public static final RegistryObject<Block> UMBRELITH_FURNACE = registerBlock("umbrelith_furnace", () -> new UmbrelithFurnaceBlock(BlockBehaviour.Properties.of().noOcclusion().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(8f,32).lightLevel(litBlockEmission(8))));
 
 
 

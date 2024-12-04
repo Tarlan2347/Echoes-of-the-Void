@@ -337,7 +337,7 @@ public class EchoesItems {
 
 
     public static final RegistryObject<BlockItem> MONOLITH = ITEMS.register("monolith", () ->
-            new BlockItem(EchoesBlocks.MONOLITH.get(), new Item.Properties().rarity(Rarity.COMMON)));
+            new BlockItem(EchoesBlocks.MONOLITH.get(), new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final RegistryObject<BlockItem> VOID_PORTAL = ITEMS.register("void_portal", () ->
             new BlockItem(EchoesBlocks.VOID_PORTAL.get(), new Item.Properties().rarity(Rarity.COMMON)));
@@ -562,6 +562,12 @@ public class EchoesItems {
             new BlockItem(EchoesBlocks.BLUE_DUSTER.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> SPARKBUD = ITEMS.register("sparkbud", () ->
             new BlockItem(EchoesBlocks.SPARKBUD.get(), new Item.Properties().rarity(Rarity.COMMON)));
+
+
+    public static final RegistryObject<BlockItem> BANDSAW = ITEMS.register("bandsaw", () ->
+            new BlockItem(EchoesBlocks.BANDSAW.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    public static final RegistryObject<BlockItem> UMBRELITH_FURNACE = ITEMS.register("umbrelith_furnace", () ->
+            new BlockItem(EchoesBlocks.UMBRELITH_FURNACE.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
 
 

@@ -1,0 +1,13 @@
+{
+    "type": "echoes:umbrelith_furnace",
+    "smeltTime": 250,
+    "ingredients": [
+        {
+            "item": "echoes:raw_azuretine"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "echoes:azuretine_ingot"
+    }
+}

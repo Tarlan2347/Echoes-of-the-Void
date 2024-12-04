@@ -22,23 +22,11 @@ public class EchoesPortalBlock extends Block {
     public EchoesPortalBlock(BlockBehaviour.Properties pProperties) {
         super(pProperties);
     }
-    public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity player) {
-        if (player.level() instanceof ServerLevel serverLevel) {
-            MinecraftServer minecraftServer = serverLevel.getServer();
-            ResourceKey<Level> resourceKey = player.level().dimension() == EchoesDimensionTypes.THE_VOID_LEVEL ? Level.OVERWORLD : EchoesDimensionTypes.THE_VOID_LEVEL;
-            ServerLevel portalDimension = minecraftServer.getLevel(resourceKey);
-            if (portalDimension != null && !player.isPassenger()) {
-                // We are going to the overworld. Upscale current position by 32.
-                BlockPos overworldDestinationPos = new BlockPos(pPos.getX()*32, pPos.getY(), pPos.getZ()*32);
-                // We are going to the overworld. Downscale current position by 32.
-                BlockPos theVoidDestinationPos = new BlockPos(pPos.getX()/32, pPos.getY(), pPos.getZ()/32);
-                if (resourceKey == EchoesDimensionTypes.THE_VOID_LEVEL) {
-                    player.changeDimension(portalDimension, new EchoesTeleporter(overworldDestinationPos, true));
-                } else {
-                    player.changeDimension(portalDimension, new EchoesTeleporter(theVoidDestinationPos, false));
-                    pLevel.setBlock(theVoidDestinationPos.below(1), EchoesBlocks.UMBRELITH.get().defaultBlockState(), 2);
-                }
-            }
+    public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
+        if (pEntity.level() instanceof ServerLevel serverLevel) {
+            ServerLevel portalDimension = serverLevel.getServer().getLevel(pEntity.level().dimension() ==
+                    EchoesDimensionTypes.THE_VOID_LEVEL ? Level.OVERWORLD : EchoesDimensionTypes.THE_VOID_LEVEL);
+            pEntity.changeDimension(portalDimension);
         }
     }
 }

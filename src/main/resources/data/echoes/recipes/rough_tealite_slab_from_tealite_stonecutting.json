@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "echoes:tealite"
-  },
-  "result": "echoes:rough_tealite_slab"
-}

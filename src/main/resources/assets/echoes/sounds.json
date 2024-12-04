@@ -1,0 +1,32 @@
+{
+  "violum_block_break": {
+    "subtitle": "sounds.echoes.violum_block_break",
+    "sounds": [
+      "echoes:violum_block_break"
+    ]
+  },
+  "violum_block_step": {
+    "subtitle": "sounds.echoes.violum_block_step",
+    "sounds": [
+      "echoes:violum_block_step"
+    ]
+  },
+  "violum_block_place": {
+    "subtitle": "sounds.echoes.violum_block_place",
+    "sounds": [
+      "echoes:violum_block_place"
+    ]
+  },
+  "violum_block_hit": {
+    "subtitle": "sounds.echoes.violum_block_hit",
+    "sounds": [
+      "echoes:violum_block_hit"
+    ]
+  },
+  "violum_block_fall": {
+    "subtitle": "sounds.echoes.violum_block_fall",
+    "sounds": [
+      "echoes:violum_block_fall"
+    ]
+  }
+}

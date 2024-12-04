@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "echoes:block/large_pink_glarium_lamp_on"
+    "all": "echoes:block/glarium/large_pink_glarium_lamp_on"
   }
 }

@@ -24,7 +24,8 @@
       "echoes:azuretine_block_from_blasting_raw_azuretine_block",
       "echoes:azuretine_block_from_smelting_raw_azuretine_block",
       "echoes:azuretine_ingot_from_blasting_raw_azuretine",
-      "echoes:azuretine_ingot_from_smelting_raw_azuretine"
+      "echoes:azuretine_ingot_from_smelting_raw_azuretine",
+      "echoes:umbrelith_furnace_azuretine_ingot_from_raw_azuretine"
     ]
   },
   "sends_telemetry_event": false

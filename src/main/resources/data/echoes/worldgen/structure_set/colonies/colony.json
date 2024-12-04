@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "echoes:colonies/colony",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10101010,
+    "spread_type": "triangular",
+    "spacing": 64,
+    "separation": 8
+  }
+}

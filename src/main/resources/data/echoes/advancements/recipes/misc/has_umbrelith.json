@@ -23,7 +23,8 @@
     "recipes": [
       "echoes:lever_from_umbrelith",
       "echoes:cobbled_umbrelith_from_umbrelith_crafting",
-      "echoes:umbrelith_from_cobbled_umbrelith_crafting"
+      "echoes:umbrelith_from_cobbled_umbrelith_crafting",
+      "echoes:umbrelith_furnace"
     ]
   },
   "sends_telemetry_event": false

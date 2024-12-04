@@ -1,15 +1,11 @@
 package net.tarlan.echoes;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.core.Holder;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -21,8 +17,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tarlan.echoes.block.EchoesBlocks;
+import net.tarlan.echoes.block.entity.EchoesBlockEntities;
 import net.tarlan.echoes.item.EchoesCreativeModeTabs;
 import net.tarlan.echoes.item.EchoesItems;
+import net.tarlan.echoes.recipe.EchoesRecipeTypes;
+import net.tarlan.echoes.screen.EchoesMenuTypes;
+import net.tarlan.echoes.screen.UmbrelithFurnaceScreen;
+import net.tarlan.echoes.sounds.EchoesSounds;
+import net.tarlan.echoes.world.inventory.EchoesBlockMenuTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -41,7 +43,11 @@ public class Echoes
         EchoesCreativeModeTabs.register(modEventBus);
         EchoesItems.register(modEventBus);
         EchoesBlocks.register(modEventBus);
-
+        EchoesSounds.register(modEventBus);
+        EchoesBlockMenuTypes.register(modEventBus);
+        EchoesMenuTypes.register(modEventBus);
+        EchoesBlockEntities.register(modEventBus);
+        EchoesRecipeTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -61,5 +67,9 @@ public class Echoes
     public static ResourceLocation createLocation(Holder<?> holder) {return createLocation(holder.unwrapKey().orElseThrow());}
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {@SubscribeEvent public static void onClientSetup(FMLClientSetupEvent event) {}}
+    public static class ClientModEvents {
+        @SubscribeEvent public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(EchoesMenuTypes.UMBRELITH_FURNACE_MENU.get(), UmbrelithFurnaceScreen::new);
+        }
+    }
 }

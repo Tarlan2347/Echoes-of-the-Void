@@ -24,7 +24,8 @@
       "echoes:verdantine_block_from_blasting_raw_verdantine_block",
       "echoes:verdantine_block_from_smelting_raw_verdantine_block",
       "echoes:verdantine_ingot_from_blasting_raw_verdantine",
-      "echoes:verdantine_ingot_from_smelting_raw_verdantine"
+      "echoes:verdantine_ingot_from_smelting_raw_verdantine",
+      "echoes:umbrelith_furnace_verdantine_ingot_from_raw_verdantine"
     ]
   },
   "sends_telemetry_event": false

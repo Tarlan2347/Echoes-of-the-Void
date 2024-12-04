@@ -24,7 +24,8 @@
       "echoes:neron_block_from_blasting_raw_neron_block",
       "echoes:neron_block_from_smelting_raw_neron_block",
       "echoes:neron_ingot_from_blasting_raw_neron",
-      "echoes:neron_ingot_from_smelting_raw_neron"
+      "echoes:neron_ingot_from_smelting_raw_neron",
+      "echoes:umbrelith_furnace_neron_ingot_from_raw_neron"
     ]
   },
   "sends_telemetry_event": false

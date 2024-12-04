@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": [{
-    "tag": "echoes:full_palestone_blocks"
-  }],
-  "result": "echoes:palestone"
-}

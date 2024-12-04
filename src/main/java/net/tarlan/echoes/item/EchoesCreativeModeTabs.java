@@ -387,6 +387,9 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.GREEN_DUSTER.get());
                         pOutput.accept(EchoesItems.BLUE_DUSTER.get());
                         pOutput.accept(EchoesItems.SPARKBUD.get());
+
+                        pOutput.accept(EchoesItems.BANDSAW.get());
+                        pOutput.accept(EchoesItems.UMBRELITH_FURNACE.get());
                     })
                     .build());
 

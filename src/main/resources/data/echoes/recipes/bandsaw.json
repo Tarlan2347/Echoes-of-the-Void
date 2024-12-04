@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "v": {
+      "item": "echoes:verdantine_ingot"
+    },
+    "u": {
+      "item": "echoes:smooth_umbrelith"
+    }
+  },
+  "pattern": [
+    "uu ",
+    "uv ",
+    "uuu"
+  ],
+  "result": {
+    "item": "echoes:bandsaw"
+  },
+  "show_notification": true
+}

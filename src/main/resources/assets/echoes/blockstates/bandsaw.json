@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "echoes:block/bandsaw",
+      "y": 0
+    },
+    "facing=north": {
+      "model": "echoes:block/bandsaw",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "echoes:block/bandsaw",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "echoes:block/bandsaw",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "echoes:umbrelith_furnace",
+    "smeltTime": 150,
+    "ingredients": [
+        {
+            "item": "echoes:raw_verdantine"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "echoes:verdantine_ingot"
+    }
+}

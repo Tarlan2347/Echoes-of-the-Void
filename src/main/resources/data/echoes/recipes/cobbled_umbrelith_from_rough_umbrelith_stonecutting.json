@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "echoes:umbrelith"
-  },
-  "result": "echoes:cobbled_umbrelith"
-}

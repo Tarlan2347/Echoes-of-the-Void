@@ -1,0 +1,13 @@
+{
+    "type": "echoes:umbrelith_furnace",
+    "smeltTime": 200,
+    "ingredients": [
+        {
+            "item": "echoes:raw_neron"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "echoes:neron_ingot"
+    }
+}

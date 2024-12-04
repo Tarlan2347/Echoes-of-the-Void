@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "echoes:smooth_umbrelith"
-  },
-  "result": "echoes:umbrelith_omni_slab"
-}

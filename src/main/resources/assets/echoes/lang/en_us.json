@@ -46,6 +46,8 @@
 
 
 
+  "container.echoes.bandsaw": "Bandsaw",
+
 
 
   "creativetab.echoes_blocks": "Echoes' Blocks",
@@ -292,6 +294,9 @@
   "block.echoes.blue_duster": "Blue Duster",
   "block.echoes.sparkbud": "Sparkbud",
 
+  "block.echoes.bandsaw": "Bandsaw",
+  "block.echoes.umbrelith_furnace": "Umbrelith Furnace",
+
 
 
 
@@ -366,5 +371,14 @@
   "item.echoes.violum_helmet": "Violum Helmet",
   "item.echoes.violum_chestplate": "Violum Chestplate",
   "item.echoes.violum_leggings": "Violum Leggings",
-  "item.echoes.violum_boots": "Violum Boots"
+  "item.echoes.violum_boots": "Violum Boots",
+
+
+
+
+  "sounds.echoes.violum_block_break": "Violum Block Break",
+  "sounds.echoes.violum_block_step": "Violum Block Step",
+  "sounds.echoes.violum_block_place": "Violum Block Place",
+  "sounds.echoes.violum_block_hit": "Violum Block Hit",
+  "sounds.echoes.violum_block_fall": "Violum Block Fall"
 }
