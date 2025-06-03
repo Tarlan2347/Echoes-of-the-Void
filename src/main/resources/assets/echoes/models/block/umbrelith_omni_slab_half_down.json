@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/slab",
 	"textures": {
-		"side": "echoes:block/stone/umbrelith_slab",
-		"top": "echoes:block/stone/umbrelith_block"
+		"side": "echoes:block/umbrelith/new_umbrelith/umbrelith_slab",
+		"top": "echoes:block/umbrelith/new_umbrelith/umbrelith_block"
 	},
 	"elements": [
 		{

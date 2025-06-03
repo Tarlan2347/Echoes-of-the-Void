@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:llerae_log"
+    }
+  ],
+  "result": {
+    "item": "echoes:llerae_planks",
+    "count": 4
+  }
+}

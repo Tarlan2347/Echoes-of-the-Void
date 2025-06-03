@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "echoes:block/stone/smooth_umbrelith",
-    "side": "echoes:block/stone/smooth_umbrelith"
+    "end": "echoes:block/umbrelith/new_umbrelith/smooth_umbrelith",
+    "side": "echoes:block/umbrelith/new_umbrelith/smooth_umbrelith"
   }
 }

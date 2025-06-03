@@ -24,7 +24,9 @@ import net.tarlan.echoes.recipe.EchoesRecipeTypes;
 import net.tarlan.echoes.screen.EchoesMenuTypes;
 import net.tarlan.echoes.screen.UmbrelithFurnaceScreen;
 import net.tarlan.echoes.sounds.EchoesSounds;
+import net.tarlan.echoes.util.RegistryHelper;
 import net.tarlan.echoes.world.inventory.EchoesBlockMenuTypes;
+import net.tarlan.echoes.worldgen.EchoesFeatures;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -35,7 +37,10 @@ public class Echoes
     public static final String MOD_ID = "echoes";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-
+    public static void init()
+    {
+        addRegistrars();
+    }
     public Echoes()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -48,12 +53,18 @@ public class Echoes
         EchoesMenuTypes.register(modEventBus);
         EchoesBlockEntities.register(modEventBus);
         EchoesRecipeTypes.register(modEventBus);
+        EchoesFeatures.FEATURES.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
     }
-    protected void clientSetup(final FMLClientSetupEvent event) {
+    private static void addRegistrars()
+    {
+        var regHelper = RegistryHelper.create();
+        //regHelper.addRegistrar(Registries.FEATURE, EchoesBaseFeatures::registerFeatures);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {}

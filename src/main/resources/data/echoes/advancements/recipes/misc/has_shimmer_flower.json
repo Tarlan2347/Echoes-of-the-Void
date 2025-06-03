@@ -5,7 +5,8 @@
       "conditions": {
         "items": [
           {
-            "tag": "echoes:shimmer_flowers"
+            "tag": "echoes:shimmer_flowers",
+            "item": "echoes:cpbalt_shimmer_flower"
           }
         ]
       },

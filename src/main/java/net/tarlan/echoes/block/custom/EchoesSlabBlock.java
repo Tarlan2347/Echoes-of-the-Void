@@ -1,8 +1,12 @@
 package net.tarlan.echoes.block.custom;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.debug.DebugRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.FluidTags;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -19,15 +23,18 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.EntityCollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.tarlan.echoes.util.EchoesBlockStateProperties;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
 
 public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
-
 
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
@@ -92,14 +99,14 @@ public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
             return this.halfUpAabb;
         }
     }
-    //TODO Add in-game overlay to show either a block preview or a click-location section outline.
+    //TODO Render an empty voxel shape at the place where the player is looking, matching the getStateForPlacement's determined shape.
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         LevelAccessor levelaccessor = pContext.getLevel();
         BlockPos blockpos = pContext.getClickedPos();
         BlockState blockstate = pContext.getLevel().getBlockState(blockpos);
         // Double-up this slab, keep all other configurations, and remove water
-        if (blockstate.is(this)) { return blockstate.setValue(TYPE, EchoesSlabType.DOUBLE).setValue(WATERLOGGED, Boolean.valueOf(false)).setValue(FACING, pContext.getClickedFace()); }
+        if (blockstate.is(this)) { return blockstate.setValue(TYPE, EchoesSlabType.DOUBLE).setValue(WATERLOGGED, Boolean.FALSE).setValue(FACING, pContext.getClickedFace()); }
         // Checks on side faces
         else if (pContext.getClickedFace() == Direction.EAST  && (pContext.getClickLocation().y - (double)blockpos.getY() > 0.66D)) {FluidState fluidstate = pContext.getLevel().getFluidState(blockpos);return this.defaultBlockState().setValue(TYPE, EchoesSlabType.HALF).setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER)).setValue(FACING, Direction.DOWN); }
         else if (pContext.getClickedFace() == Direction.EAST  && (pContext.getClickLocation().y - (double)blockpos.getY() < 0.33D)) {FluidState fluidstate = pContext.getLevel().getFluidState(blockpos);return this.defaultBlockState().setValue(TYPE, EchoesSlabType.HALF).setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER)).setValue(FACING, Direction.UP); }
@@ -130,16 +137,13 @@ public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
         // Default or neutral placements
         else { FluidState fluidstate = pContext.getLevel().getFluidState(blockpos); return this.defaultBlockState().setValue(TYPE, EchoesSlabType.HALF).setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER)).setValue(FACING, pContext.getClickedFace()); }
     }
+
     public boolean canBeReplaced(BlockState pState, BlockPlaceContext pUseContext) {
         ItemStack itemstack = pUseContext.getItemInHand();
         EchoesSlabType slabtype = pState.getValue(TYPE);
         if (slabtype != EchoesSlabType.DOUBLE && itemstack.is(this.asItem())) {
             Direction direction = pUseContext.getClickedFace();
-            if (direction == pState.getValue(FACING)) {
-                return true;
-            } else {
-                return false;
-            }
+            return direction == pState.getValue(FACING);
         } else {
             return false;
         }
@@ -170,16 +174,10 @@ public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
 
 
     public boolean isPathfindable(BlockState pState, BlockGetter pLevel, BlockPos pPos, PathComputationType pType) {
-        switch (pType) {
-            case LAND:
-                return false;
-            case WATER:
-                return pLevel.getFluidState(pPos).is(FluidTags.WATER);
-            case AIR:
-                return false;
-            default:
-                return false;
+        if (pType == PathComputationType.WATER) {
+            return pLevel.getFluidState(pPos).is(FluidTags.WATER);
         }
+        return false;
     }
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(WATERLOGGED, FACING, TYPE);

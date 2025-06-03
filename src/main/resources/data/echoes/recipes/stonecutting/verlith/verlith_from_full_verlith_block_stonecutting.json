@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": [{
+    "tag": "echoes:full_verlith_blocks"
+  }],
+  "result": "echoes:verlith"
+}

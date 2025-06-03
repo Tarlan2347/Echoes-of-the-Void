@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "$#$",
+    "$#$"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:shimmerdown_planks"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "echoes:shimmerdown_fence_gate"
+  }
+}

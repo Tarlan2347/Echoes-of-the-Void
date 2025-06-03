@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:violum_nodule"
+    }
+  },
+  "result": {
+    "item": "echoes:violum_nodule_block"
+  }
+}

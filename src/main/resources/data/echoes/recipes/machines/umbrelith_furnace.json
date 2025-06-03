@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "u": {
+      "item": "echoes:umbrelith"
+    }
+  },
+  "pattern": [
+    "uuu",
+    "u u",
+    "uuu"
+  ],
+  "result": {
+    "item": "echoes:umbrelith_furnace"
+  },
+  "show_notification": true
+}

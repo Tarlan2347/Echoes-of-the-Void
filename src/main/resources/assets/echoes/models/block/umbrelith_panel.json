@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "echoes:block/stone/umbrelith_panel"
+    "all": "echoes:block/umbrelith/new_umbrelith/umbrelith_panel"
   }
 }

@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab_top",
   "textures": {
-    "bottom": "echoes:block/stone/umbrelith_tiles",
-    "side": "echoes:block/stone/umbrelith_tiles",
-    "top": "echoes:block/stone/umbrelith_tiles"
+    "bottom": "echoes:block/umbrelith/new_umbrelith/umbrelith_tiles",
+    "side": "echoes:block/umbrelith/new_umbrelith/umbrelith_tiles",
+    "top": "echoes:block/umbrelith/new_umbrelith/umbrelith_tiles"
   }
 }

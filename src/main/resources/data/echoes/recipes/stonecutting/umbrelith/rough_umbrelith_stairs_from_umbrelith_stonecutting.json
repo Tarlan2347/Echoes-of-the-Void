@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "echoes:umbrelith"
+  },
+  "result": "echoes:rough_umbrelith_stairs"
+}

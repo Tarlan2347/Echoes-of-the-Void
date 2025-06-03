@@ -1,7 +1,10 @@
 package net.tarlan.echoes.item;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,6 +16,9 @@ import net.tarlan.echoes.block.EchoesBlocks;
 import net.tarlan.echoes.item.custom.EchoesFoods;
 import net.tarlan.echoes.item.custom.FuelBlockItem;
 import net.tarlan.echoes.item.custom.FuelItem;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 import static net.minecraft.world.item.Items.registerBlock;
 import static net.minecraft.world.item.Items.registerItem;
@@ -28,10 +34,10 @@ public class EchoesItems {
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> VERDANTINE_NUGGET = ITEMS.register("verdantine_nugget",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_INGOT = ITEMS.register("chorusite_ingot",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_NUGGET = ITEMS.register("chorusite_nugget",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_INGOT = ITEMS.register("chorusite_ingot",
+    //        () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_NUGGET = ITEMS.register("chorusite_nugget",
+    //        () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> RAW_AZURETINE = ITEMS.register("raw_azuretine",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> AZURETINE_INGOT = ITEMS.register("azuretine_ingot",
@@ -63,31 +69,39 @@ public class EchoesItems {
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> CINDRITE = ITEMS.register("cindrite",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> MAGMAR = ITEMS.register("magmar",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> MAGMAR = ITEMS.register("magmar",
+    //        () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> PEARLUM = ITEMS.register("pearlum",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> PERIALIGHT = ITEMS.register("perialight",
-            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> REGITE = ITEMS.register("regite",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+            () -> new FuelItem(new Item.Properties().rarity(Rarity.UNCOMMON), 8000));
+    //public static final RegistryObject<Item> REGITE = ITEMS.register("regite",
+    //        () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> XIRIUM = ITEMS.register("xirium",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     //FUELS
     public static final RegistryObject<Item> BRIMNITE = ITEMS.register("brimnite",
             () -> new FuelItem(new Item.Properties().rarity(Rarity.COMMON), 2400));
-    public static final RegistryObject<Item> FLARE_DUST = ITEMS.register("flare_dust",
-            () -> new FuelItem(new Item.Properties().rarity(Rarity.COMMON), 4800));
+    //public static final RegistryObject<Item> FLARE_DUST = ITEMS.register("flare_dust",
+    //        () -> new FuelItem(new Item.Properties().rarity(Rarity.COMMON), 4800));
     public static final RegistryObject<Item> RESONANE = ITEMS.register("resonane",
-            () -> new FuelItem(new Item.Properties().rarity(Rarity.RARE),20000));
+            () -> new FuelItem(new Item.Properties().rarity(Rarity.RARE),16000));
     public static final RegistryObject<Item> UMBRITE = ITEMS.register("umbrite",
             () -> new FuelItem(new Item.Properties().rarity(Rarity.COMMON), 2400));
 
-    public static final RegistryObject<Item> COMPACTED_CHORUS = ITEMS.register("compacted_chorus",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> COMPACTED_CHORUS = ITEMS.register("compacted_chorus",
+    //        () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final RegistryObject<Item> VIOLUM_SMITHING_UPGRADE = ITEMS.register("violum_smithing_upgrade",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).fireResistant()));
+
+    public static final RegistryObject<Item> SHIVA_SCALE = ITEMS.register("shiva_scale",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(8)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    pTooltipComponents.add(Component.literal("It still hums...").withStyle(ChatFormatting.DARK_GRAY).withStyle(ChatFormatting.ITALIC));
+                }
+            });
 
 
 
@@ -96,8 +110,8 @@ public class EchoesItems {
             new BlockItem(EchoesBlocks.RAW_VERDANTINE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> RAW_VERDANTINE_BLOCK = ITEMS.register("verdantine_block", () ->
             new BlockItem(EchoesBlocks.VERDANTINE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> CHORUSITE_BLOCK = ITEMS.register("chorusite_block", () ->
-            new BlockItem(EchoesBlocks.CHORUSITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<BlockItem> CHORUSITE_BLOCK = ITEMS.register("chorusite_block", () ->
+    //        new BlockItem(EchoesBlocks.CHORUSITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> RAW_AZURETINE_BLOCK = ITEMS.register("raw_azuretine_block", () ->
             new BlockItem(EchoesBlocks.RAW_AZURETINE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> AZURETINE_BLOCK = ITEMS.register("azuretine_block", () ->
@@ -115,21 +129,23 @@ public class EchoesItems {
             new BlockItem(EchoesBlocks.CHLORIUM_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> CINDRITE_BLOCK = ITEMS.register("cindrite_block", () ->
             new BlockItem(EchoesBlocks.CINDRITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> MAGMAR_BLOCK = ITEMS.register("magmar_block", () ->
-            new BlockItem(EchoesBlocks.MAGMAR_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<BlockItem> MAGMAR_BLOCK = ITEMS.register("magmar_block", () ->
+    //        new BlockItem(EchoesBlocks.MAGMAR_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> PEARLUM_BLOCK = ITEMS.register("pearlum_block", () ->
             new BlockItem(EchoesBlocks.PEARLUM_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> PERIALIGHT_BLOCK = ITEMS.register("perialight_block", () ->
-            new BlockItem(EchoesBlocks.PERIALIGHT_BLOCK.get(), new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<BlockItem> REGITE_BLOCK = ITEMS.register("regite_block", () ->
-            new BlockItem(EchoesBlocks.REGITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
+            new FuelBlockItem(EchoesBlocks.PERIALIGHT_BLOCK.get(), new Item.Properties().rarity(Rarity.UNCOMMON), 72000));
+    //public static final RegistryObject<BlockItem> REGITE_BLOCK = ITEMS.register("regite_block", () ->
+    //        new BlockItem(EchoesBlocks.REGITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> XIRIUM_BLOCK = ITEMS.register("xirium_block", () ->
             new BlockItem(EchoesBlocks.XIRIUM_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    public static final RegistryObject<BlockItem> GLOWING_XIRIUM_BLOCK = ITEMS.register("glowing_xirium_block", () ->
+            new BlockItem(EchoesBlocks.GLOWING_XIRIUM_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final RegistryObject<BlockItem> BRIMNITE_BLOCK = ITEMS.register("brimnite_block", () ->
             new FuelBlockItem(EchoesBlocks.BRIMNITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON), 21600));
     public static final RegistryObject<BlockItem> RESONANE_BLOCK = ITEMS.register("resonane_block", () ->
-            new FuelBlockItem(EchoesBlocks.RESONANE_BLOCK.get(), new Item.Properties().rarity(Rarity.RARE), 180000));
+            new FuelBlockItem(EchoesBlocks.RESONANE_BLOCK.get(), new Item.Properties().rarity(Rarity.RARE), 144000));
     public static final RegistryObject<BlockItem> UMBRITE_BLOCK = ITEMS.register("umbrite_block", () ->
             new FuelBlockItem(EchoesBlocks.UMBRITE_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON), 21600));
 
@@ -208,43 +224,43 @@ public class EchoesItems {
     public static final RegistryObject<BlockItem> CHISELED_PALESTONE = ITEMS.register("chiseled_palestone", () ->
             new BlockItem(EchoesBlocks.CHISELED_PALESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
-    public static final RegistryObject<BlockItem> BLUESTONE = ITEMS.register("bluestone", () ->
-            new BlockItem(EchoesBlocks.BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> SMOOTH_BLUESTONE = ITEMS.register("smooth_bluestone", () ->
-            new BlockItem(EchoesBlocks.SMOOTH_BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> POLISHED_BLUESTONE = ITEMS.register("polished_bluestone", () ->
-            new BlockItem(EchoesBlocks.POLISHED_BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> BLUESTONE_BRICKS = ITEMS.register("bluestone_bricks", () ->
-            new BlockItem(EchoesBlocks.BLUESTONE_BRICKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> QUARTZ_STYLE_BLUESTONE_BRICKS = ITEMS.register("quartz_style_bluestone_bricks", () ->
-            new BlockItem(EchoesBlocks.QUARTZ_STYLE_BLUESTONE_BRICKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> BLUESTONE_STAIRS = ITEMS.register("bluestone_stairs", () ->
-            new BlockItem(EchoesBlocks.BLUESTONE_STAIRS.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> BLUESTONE_SLAB = ITEMS.register("bluestone_slab", () ->
-            new BlockItem(EchoesBlocks.BLUESTONE_SLAB.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> BLUESTONE_WALL = ITEMS.register("bluestone_wall", () ->
-            new BlockItem(EchoesBlocks.BLUESTONE_WALL.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> BLUESTONE_PILLAR = ITEMS.register("bluestone_pillar", () ->
-            new BlockItem(EchoesBlocks.BLUESTONE_PILLAR.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> CHISELED_BLUESTONE = ITEMS.register("chiseled_bluestone", () ->
-            new BlockItem(EchoesBlocks.CHISELED_BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> BLUESTONE = ITEMS.register("bluestone", () ->
+   //        new BlockItem(EchoesBlocks.BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> SMOOTH_BLUESTONE = ITEMS.register("smooth_bluestone", () ->
+   //        new BlockItem(EchoesBlocks.SMOOTH_BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> POLISHED_BLUESTONE = ITEMS.register("polished_bluestone", () ->
+   //        new BlockItem(EchoesBlocks.POLISHED_BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> BLUESTONE_BRICKS = ITEMS.register("bluestone_bricks", () ->
+   //        new BlockItem(EchoesBlocks.BLUESTONE_BRICKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> QUARTZ_STYLE_BLUESTONE_BRICKS = ITEMS.register("quartz_style_bluestone_bricks", () ->
+   //        new BlockItem(EchoesBlocks.QUARTZ_STYLE_BLUESTONE_BRICKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> BLUESTONE_STAIRS = ITEMS.register("bluestone_stairs", () ->
+   //        new BlockItem(EchoesBlocks.BLUESTONE_STAIRS.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> BLUESTONE_SLAB = ITEMS.register("bluestone_slab", () ->
+   //        new BlockItem(EchoesBlocks.BLUESTONE_SLAB.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> BLUESTONE_WALL = ITEMS.register("bluestone_wall", () ->
+   //        new BlockItem(EchoesBlocks.BLUESTONE_WALL.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> BLUESTONE_PILLAR = ITEMS.register("bluestone_pillar", () ->
+   //        new BlockItem(EchoesBlocks.BLUESTONE_PILLAR.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> CHISELED_BLUESTONE = ITEMS.register("chiseled_bluestone", () ->
+   //        new BlockItem(EchoesBlocks.CHISELED_BLUESTONE.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
-    public static final RegistryObject<BlockItem> ODER = ITEMS.register("oder", () ->
-            new BlockItem(EchoesBlocks.ODER.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> POLISHED_ODER = ITEMS.register("polished_oder", () ->
-            new BlockItem(EchoesBlocks.POLISHED_ODER.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> ODER_BRICKS = ITEMS.register("oder_bricks", () ->
-            new BlockItem(EchoesBlocks.ODER_BRICKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> ODER_TILES = ITEMS.register("oder_tiles", () ->
-            new BlockItem(EchoesBlocks.ODER_TILES.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> ODER_PILLAR = ITEMS.register("oder_pillar", () ->
-            new BlockItem(EchoesBlocks.ODER_PILLAR.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> ODER_STAIRS = ITEMS.register("oder_stairs", () ->
-            new BlockItem(EchoesBlocks.ODER_STAIRS.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> ODER_SLAB = ITEMS.register("oder_slab", () ->
-            new BlockItem(EchoesBlocks.ODER_SLAB.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> ODER_WALL = ITEMS.register("oder_wall", () ->
-            new BlockItem(EchoesBlocks.ODER_WALL.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER = ITEMS.register("oder", () ->
+   //        new BlockItem(EchoesBlocks.ODER.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> POLISHED_ODER = ITEMS.register("polished_oder", () ->
+   //        new BlockItem(EchoesBlocks.POLISHED_ODER.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER_BRICKS = ITEMS.register("oder_bricks", () ->
+   //        new BlockItem(EchoesBlocks.ODER_BRICKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER_TILES = ITEMS.register("oder_tiles", () ->
+   //        new BlockItem(EchoesBlocks.ODER_TILES.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER_PILLAR = ITEMS.register("oder_pillar", () ->
+   //        new BlockItem(EchoesBlocks.ODER_PILLAR.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER_STAIRS = ITEMS.register("oder_stairs", () ->
+   //        new BlockItem(EchoesBlocks.ODER_STAIRS.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER_SLAB = ITEMS.register("oder_slab", () ->
+   //        new BlockItem(EchoesBlocks.ODER_SLAB.get(), new Item.Properties().rarity(Rarity.COMMON)));
+   //public static final RegistryObject<BlockItem> ODER_WALL = ITEMS.register("oder_wall", () ->
+   //        new BlockItem(EchoesBlocks.ODER_WALL.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final RegistryObject<BlockItem> UMBRELITH = ITEMS.register("umbrelith", () ->
             new BlockItem(EchoesBlocks.UMBRELITH.get(), new Item.Properties().rarity(Rarity.COMMON)));
@@ -361,16 +377,16 @@ public class EchoesItems {
             new BlockItem(EchoesBlocks.DEEPSLATE_CINDRITE_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> NETHER_CINDRITE_ORE = ITEMS.register("nether_cindrite_ore", () ->
             new BlockItem(EchoesBlocks.NETHER_CINDRITE_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> MAGMAR_ORE = ITEMS.register("magmar_ore", () ->
-            new BlockItem(EchoesBlocks.MAGMAR_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<BlockItem> MAGMAR_ORE = ITEMS.register("magmar_ore", () ->
+    //        new BlockItem(EchoesBlocks.MAGMAR_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> PEARLUM_ORE = ITEMS.register("pearlum_ore", () ->
             new BlockItem(EchoesBlocks.PEARLUM_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> PERIALIGHT_ORE = ITEMS.register("perialight_ore", () ->
             new BlockItem(EchoesBlocks.PERIALIGHT_ORE.get(), new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<BlockItem> END_PERIALIGHT_ORE = ITEMS.register("end_perialight_ore", () ->
             new BlockItem(EchoesBlocks.END_PERIALIGHT_ORE.get(), new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<BlockItem> REGITE_ORE = ITEMS.register("regite_ore", () ->
-            new BlockItem(EchoesBlocks.REGITE_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<BlockItem> REGITE_ORE = ITEMS.register("regite_ore", () ->
+            //        new BlockItem(EchoesBlocks.REGITE_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> XIRIUM_ORE = ITEMS.register("xirium_ore", () ->
             new BlockItem(EchoesBlocks.XIRIUM_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
@@ -383,10 +399,10 @@ public class EchoesItems {
     public static final RegistryObject<BlockItem> END_UMBRITE_ORE = ITEMS.register("end_umbrite_ore", () ->
             new BlockItem(EchoesBlocks.END_UMBRITE_ORE.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
-    public static final RegistryObject<BlockItem> CHORUS_BLOCK = ITEMS.register("chorus_block", () ->
-            new BlockItem(EchoesBlocks.CHORUS_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<BlockItem> CHORUS_PLANKS = ITEMS.register("chorus_planks", () ->
-            new BlockItem(EchoesBlocks.CHORUS_PLANKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<BlockItem> CHORUS_BLOCK = ITEMS.register("chorus_block", () ->
+    //        new BlockItem(EchoesBlocks.CHORUS_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<BlockItem> CHORUS_PLANKS = ITEMS.register("chorus_planks", () ->
+    //        new BlockItem(EchoesBlocks.CHORUS_PLANKS.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final RegistryObject<BlockItem> RAW_GLARIUM_BLOCK = ITEMS.register("raw_glarium_block", () ->
             new BlockItem(EchoesBlocks.RAW_GLARIUM_BLOCK.get(), new Item.Properties().rarity(Rarity.COMMON)));
@@ -550,8 +566,8 @@ public class EchoesItems {
     public static final RegistryObject<BlockItem> COBALT_TUFT_SMALL = ITEMS.register("cobalt_tuft_small", () ->
             new BlockItem(EchoesBlocks.COBALT_TUFT_SMALL.get(), new Item.Properties().rarity(Rarity.COMMON)));
 
-    public static final RegistryObject<BlockItem> COBALT_MOSS_CARPET = ITEMS.register("cobalt_moss_carpet", () ->
-            new BlockItem(EchoesBlocks.COBALT_MOSS_CARPET.get(), new Item.Properties().rarity(Rarity.COMMON)));
+    public static final RegistryObject<BlockItem> COBALT_MOSS_LAYER = ITEMS.register("cobalt_moss_layer", () ->
+            new BlockItem(EchoesBlocks.COBALT_MOSS_LAYER.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> INK_TENDRIL = ITEMS.register("ink_tendril", () ->
             new BlockItem(EchoesBlocks.INK_TENDRIL.get(), new Item.Properties().rarity(Rarity.COMMON)));
     public static final RegistryObject<BlockItem> RED_DUSTER = ITEMS.register("red_duster", () ->
@@ -605,16 +621,16 @@ public class EchoesItems {
     public static final RegistryObject<Item> CINDRITE_HOE = ITEMS.register("cindrite_hoe", () ->
             new HoeItem(EchoesTiers.CINDRITE, 0, -3.0f, new Item.Properties().rarity(Rarity.COMMON)));
 
-    public static final RegistryObject<Item> CHORUSITE_SWORD = ITEMS.register("chorusite_sword", () ->
-            new SwordItem(EchoesTiers.CHORUSITE, 3, -2.4f, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_SHOVEL = ITEMS.register("chorusite_shovel", () ->
-            new ShovelItem(EchoesTiers.CHORUSITE, 1.5f, -3.0f, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_PICKAXE = ITEMS.register("chorusite_pickaxe", () ->
-            new PickaxeItem(EchoesTiers.CHORUSITE, 1, -2.8f, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_AXE = ITEMS.register("chorusite_axe", () ->
-            new AxeItem(EchoesTiers.CHORUSITE, 5, -3.2f, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_HOE = ITEMS.register("chorusite_hoe", () ->
-            new HoeItem(EchoesTiers.CHORUSITE, 0, -3.0f, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_SWORD = ITEMS.register("chorusite_sword", () ->
+    //        new SwordItem(EchoesTiers.CHORUSITE, 3, -2.4f, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_SHOVEL = ITEMS.register("chorusite_shovel", () ->
+    //        new ShovelItem(EchoesTiers.CHORUSITE, 1.5f, -3.0f, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_PICKAXE = ITEMS.register("chorusite_pickaxe", () ->
+    //        new PickaxeItem(EchoesTiers.CHORUSITE, 1, -2.8f, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_AXE = ITEMS.register("chorusite_axe", () ->
+    //        new AxeItem(EchoesTiers.CHORUSITE, 5, -3.2f, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_HOE = ITEMS.register("chorusite_hoe", () ->
+    //        new HoeItem(EchoesTiers.CHORUSITE, 0, -3.0f, new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final RegistryObject<Item> NERON_SWORD = ITEMS.register("neron_sword", () ->
             new SwordItem(EchoesTiers.NERON, 3, -2.4f, new Item.Properties().rarity(Rarity.COMMON)));
@@ -680,14 +696,14 @@ public class EchoesItems {
     public static final RegistryObject<Item> VERDANTINE_BOOTS = ITEMS.register("verdantine_boots",
             () -> new ArmorItem(EchoesArmorMaterials.VERDANTINE, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.COMMON)));
 
-    public static final RegistryObject<Item> CHORUSITE_HELMET = ITEMS.register("chorusite_helmet",
-            () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_CHESTPLATE = ITEMS.register("chorusite_chestplate",
-            () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_LEGGINGS = ITEMS.register("chorusite_leggings",
-            () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.LEGGINGS, new Item.Properties().rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> CHORUSITE_BOOTS = ITEMS.register("chorusite_boots",
-            () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_HELMET = ITEMS.register("chorusite_helmet",
+    //        () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_CHESTPLATE = ITEMS.register("chorusite_chestplate",
+    //        () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_LEGGINGS = ITEMS.register("chorusite_leggings",
+    //        () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.LEGGINGS, new Item.Properties().rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> CHORUSITE_BOOTS = ITEMS.register("chorusite_boots",
+    //        () -> new ArmorItem(EchoesArmorMaterials.CHORUSITE, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final RegistryObject<Item> NERON_HELMET = ITEMS.register("neron_helmet",
             () -> new ArmorItem(EchoesArmorMaterials.NERON, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.COMMON)));
@@ -735,8 +751,8 @@ public class EchoesItems {
             () -> new Item(new Item.Properties().food(EchoesFoods.SHIMMER_STUFFED_LLERAE).rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> COBALT_TUFT_CONE = ITEMS.register("cobalt_tuft_cone",
             () -> new Item(new Item.Properties().food(EchoesFoods.COBALT_TUFT_CONE).rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> MOSSBERRY = ITEMS.register("mossberry",
-            () -> new ItemNameBlockItem(EchoesBlocks.MOSSBERRY.get(),new Item.Properties().food(EchoesFoods.MOSSBERRY).rarity(Rarity.COMMON)));
+    //public static final RegistryObject<Item> MOSSBERRY = ITEMS.register("mossberry",
+    //        () -> new ItemNameBlockItem(EchoesBlocks.MOSSBERRY.get(),new Item.Properties().food(EchoesFoods.MOSSBERRY).rarity(Rarity.COMMON)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

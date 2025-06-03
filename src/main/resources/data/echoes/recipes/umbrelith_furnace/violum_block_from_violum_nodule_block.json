@@ -1,0 +1,13 @@
+{
+    "type": "echoes:umbrelith_furnace",
+    "smeltTime": 3600,
+    "ingredients": [
+        {
+            "item": "echoes:violum_nodule_block"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "echoes:violum_block"
+    }
+}

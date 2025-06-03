@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:chlorium_block"
+    }
+  ],
+  "result": {
+    "item": "echoes:chlorium",
+    "count": 9
+  }
+}

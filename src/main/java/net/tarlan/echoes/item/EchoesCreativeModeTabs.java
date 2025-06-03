@@ -20,8 +20,8 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.RAW_VERDANTINE.get());
                         pOutput.accept(EchoesItems.VERDANTINE_INGOT.get());
                         pOutput.accept(EchoesItems.VERDANTINE_NUGGET.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_INGOT.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_NUGGET.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_INGOT.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_NUGGET.get());
                         pOutput.accept(EchoesItems.RAW_AZURETINE.get());
                         pOutput.accept(EchoesItems.AZURETINE_INGOT.get());
                         pOutput.accept(EchoesItems.AZURETINE_NUGGET.get());
@@ -38,26 +38,27 @@ public class EchoesCreativeModeTabs {
 
                         pOutput.accept(EchoesItems.CHLORIUM.get());
                         pOutput.accept(EchoesItems.CINDRITE.get());
-                        pOutput.accept(EchoesItems.MAGMAR.get());
+                        //pOutput.accept(EchoesItems.MAGMAR.get());
                         pOutput.accept(EchoesItems.PEARLUM.get());
                         pOutput.accept(EchoesItems.PERIALIGHT.get());
-                        pOutput.accept(EchoesItems.REGITE.get());
+                        //pOutput.accept(EchoesItems.REGITE.get());
                         pOutput.accept(EchoesItems.XIRIUM.get());
 
                         pOutput.accept(EchoesItems.BRIMNITE.get());
-                        pOutput.accept(EchoesItems.FLARE_DUST.get());
+                        //pOutput.accept(EchoesItems.FLARE_DUST.get());
                         pOutput.accept(EchoesItems.RESONANE.get());
                         pOutput.accept(EchoesItems.UMBRITE.get());
 
-                        pOutput.accept(EchoesItems.COMPACTED_CHORUS.get());
+                        //pOutput.accept(EchoesItems.COMPACTED_CHORUS.get());
                         pOutput.accept(EchoesItems.VIOLUM_SMITHING_UPGRADE.get());
+                        pOutput.accept(EchoesItems.SHIVA_SCALE.get());
 
                         pOutput.accept(EchoesItems.LLERAE_FRUIT.get());
                         pOutput.accept(EchoesItems.BAKED_LLERAE_FRUIT.get());
                         pOutput.accept(EchoesItems.COBALT_SHIMMER_FLOWER.get());
                         pOutput.accept(EchoesItems.SHIMMER_STUFFED_LLERAE.get());
-                        pOutput.accept(EchoesItems.COBALT_TUFT_CONE.get());
-                        pOutput.accept(EchoesItems.MOSSBERRY.get());
+                        //pOutput.accept(EchoesItems.COBALT_TUFT_CONE.get());
+                        //pOutput.accept(EchoesItems.MOSSBERRY.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> ECHOES_TOOLS_AND_ARMOR = CREATIVE_MODE_TABS.register("echoes_tools_and_armor",
@@ -80,11 +81,11 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.CINDRITE_PICKAXE.get());
                         pOutput.accept(EchoesItems.CINDRITE_AXE.get());
                         pOutput.accept(EchoesItems.CINDRITE_HOE.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_SWORD.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_SHOVEL.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_PICKAXE.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_AXE.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_HOE.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_SWORD.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_SHOVEL.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_PICKAXE.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_AXE.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_HOE.get());
                         pOutput.accept(EchoesItems.NERON_SWORD.get());
                         pOutput.accept(EchoesItems.NERON_SHOVEL.get());
                         pOutput.accept(EchoesItems.NERON_PICKAXE.get());
@@ -115,10 +116,10 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.VERDANTINE_CHESTPLATE.get());
                         pOutput.accept(EchoesItems.VERDANTINE_LEGGINGS.get());
                         pOutput.accept(EchoesItems.VERDANTINE_BOOTS.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_HELMET.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_CHESTPLATE.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_LEGGINGS.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_BOOTS.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_HELMET.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_CHESTPLATE.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_LEGGINGS.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_BOOTS.get());
                         pOutput.accept(EchoesItems.NERON_HELMET.get());
                         pOutput.accept(EchoesItems.NERON_CHESTPLATE.get());
                         pOutput.accept(EchoesItems.NERON_LEGGINGS.get());
@@ -144,7 +145,7 @@ public class EchoesCreativeModeTabs {
 
                         pOutput.accept(EchoesItems.RAW_VERDANTINE_BLOCK.get());
                         pOutput.accept(EchoesItems.VERDANTINE_BLOCK.get());
-                        pOutput.accept(EchoesItems.CHORUSITE_BLOCK.get());
+                        //pOutput.accept(EchoesItems.CHORUSITE_BLOCK.get());
                         pOutput.accept(EchoesItems.RAW_AZURETINE_BLOCK.get());
                         pOutput.accept(EchoesItems.AZURETINE_BLOCK.get());
                         pOutput.accept(EchoesItems.RAW_NERON_BLOCK.get());
@@ -154,11 +155,12 @@ public class EchoesCreativeModeTabs {
 
                         pOutput.accept(EchoesItems.CHLORIUM_BLOCK.get());
                         pOutput.accept(EchoesItems.CINDRITE_BLOCK.get());
-                        pOutput.accept(EchoesItems.MAGMAR_BLOCK.get());
+                        //pOutput.accept(EchoesItems.MAGMAR_BLOCK.get());
                         pOutput.accept(EchoesItems.PEARLUM_BLOCK.get());
                         pOutput.accept(EchoesItems.PERIALIGHT_BLOCK.get());
-                        pOutput.accept(EchoesItems.REGITE_BLOCK.get());
+                        //pOutput.accept(EchoesItems.REGITE_BLOCK.get());
                         pOutput.accept(EchoesItems.XIRIUM_BLOCK.get());
+                        pOutput.accept(EchoesItems.GLOWING_XIRIUM_BLOCK.get());
 
                         pOutput.accept(EchoesItems.BRIMNITE_BLOCK.get());
                         pOutput.accept(EchoesItems.RESONANE_BLOCK.get());
@@ -203,25 +205,25 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.PALESTONE_PILLAR_CROSS.get());
                         pOutput.accept(EchoesItems.CHISELED_PALESTONE.get());
 
-                        pOutput.accept(EchoesItems.BLUESTONE.get());
-                        pOutput.accept(EchoesItems.SMOOTH_BLUESTONE.get());
-                        pOutput.accept(EchoesItems.POLISHED_BLUESTONE.get());
-                        pOutput.accept(EchoesItems.BLUESTONE_BRICKS.get());
-                        pOutput.accept(EchoesItems.QUARTZ_STYLE_BLUESTONE_BRICKS.get());
-                        pOutput.accept(EchoesItems.BLUESTONE_STAIRS.get());
-                        pOutput.accept(EchoesItems.BLUESTONE_SLAB.get());
-                        pOutput.accept(EchoesItems.BLUESTONE_WALL.get());
-                        pOutput.accept(EchoesItems.BLUESTONE_PILLAR.get());
-                        pOutput.accept(EchoesItems.CHISELED_BLUESTONE.get());
-
-                        pOutput.accept(EchoesItems.ODER.get());
-                        pOutput.accept(EchoesItems.POLISHED_ODER.get());
-                        pOutput.accept(EchoesItems.ODER_BRICKS.get());
-                        pOutput.accept(EchoesItems.ODER_TILES.get());
-                        pOutput.accept(EchoesItems.ODER_PILLAR.get());
-                        pOutput.accept(EchoesItems.ODER_STAIRS.get());
-                        pOutput.accept(EchoesItems.ODER_SLAB.get());
-                        pOutput.accept(EchoesItems.ODER_WALL.get());
+                        //pOutput.accept(EchoesItems.BLUESTONE.get());
+                        //pOutput.accept(EchoesItems.SMOOTH_BLUESTONE.get());
+                        //pOutput.accept(EchoesItems.POLISHED_BLUESTONE.get());
+                        //pOutput.accept(EchoesItems.BLUESTONE_BRICKS.get());
+                        //pOutput.accept(EchoesItems.QUARTZ_STYLE_BLUESTONE_BRICKS.get());
+                        //pOutput.accept(EchoesItems.BLUESTONE_STAIRS.get());
+                        //pOutput.accept(EchoesItems.BLUESTONE_SLAB.get());
+                        //pOutput.accept(EchoesItems.BLUESTONE_WALL.get());
+                        //pOutput.accept(EchoesItems.BLUESTONE_PILLAR.get());
+                        //pOutput.accept(EchoesItems.CHISELED_BLUESTONE.get());
+                        //
+                        //pOutput.accept(EchoesItems.ODER.get());
+                        //pOutput.accept(EchoesItems.POLISHED_ODER.get());
+                        //pOutput.accept(EchoesItems.ODER_BRICKS.get());
+                        //pOutput.accept(EchoesItems.ODER_TILES.get());
+                        //pOutput.accept(EchoesItems.ODER_PILLAR.get());
+                        //pOutput.accept(EchoesItems.ODER_STAIRS.get());
+                        //pOutput.accept(EchoesItems.ODER_SLAB.get());
+                        //pOutput.accept(EchoesItems.ODER_WALL.get());
 
                         pOutput.accept(EchoesItems.UMBRELITH.get());
                         pOutput.accept(EchoesItems.COBBLED_UMBRELITH.get());
@@ -280,11 +282,11 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.CINDRITE_ORE.get());
                         pOutput.accept(EchoesItems.DEEPSLATE_CINDRITE_ORE.get());
                         pOutput.accept(EchoesItems.NETHER_CINDRITE_ORE.get());
-                        pOutput.accept(EchoesItems.MAGMAR_ORE.get());
+                        //pOutput.accept(EchoesItems.MAGMAR_ORE.get());
                         pOutput.accept(EchoesItems.PEARLUM_ORE.get());
                         pOutput.accept(EchoesItems.PERIALIGHT_ORE.get());
                         pOutput.accept(EchoesItems.END_PERIALIGHT_ORE.get());
-                        pOutput.accept(EchoesItems.REGITE_ORE.get());
+                        //pOutput.accept(EchoesItems.REGITE_ORE.get());
                         pOutput.accept(EchoesItems.XIRIUM_ORE.get());
 
                         pOutput.accept(EchoesItems.BRIMNITE_ORE.get());
@@ -292,8 +294,8 @@ public class EchoesCreativeModeTabs {
                         pOutput.accept(EchoesItems.DEEPSLATE_UMBRITE_ORE.get());
                         pOutput.accept(EchoesItems.END_UMBRITE_ORE.get());
 
-                        pOutput.accept(EchoesItems.CHORUS_BLOCK.get());
-                        pOutput.accept(EchoesItems.CHORUS_PLANKS.get());
+                        //pOutput.accept(EchoesItems.CHORUS_BLOCK.get());
+                        //pOutput.accept(EchoesItems.CHORUS_PLANKS.get());
 
                         pOutput.accept(EchoesItems.GLARIUM_ORE.get());
                         pOutput.accept(EchoesItems.RAW_GLARIUM_BLOCK.get());
@@ -380,7 +382,7 @@ public class EchoesCreativeModeTabs {
 
                         pOutput.accept(EchoesItems.COBALT_TUFT_SMALL.get());
 
-                        pOutput.accept(EchoesItems.COBALT_MOSS_CARPET.get());
+                        pOutput.accept(EchoesItems.COBALT_MOSS_LAYER.get());
 
                         pOutput.accept(EchoesItems.INK_TENDRIL.get());
                         pOutput.accept(EchoesItems.RED_DUSTER.get());

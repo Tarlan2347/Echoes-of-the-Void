@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/inner_stairs",
   "textures": {
-    "top": "echoes:block/stone/fine_umbrelith_tiles",
-    "side": "echoes:block/stone/fine_umbrelith_tiles",
-    "bottom": "echoes:block/stone/fine_umbrelith_tiles"
+    "top": "echoes:block/umbrelith/new_umbrelith/fine_umbrelith_tiles",
+    "side": "echoes:block/umbrelith/new_umbrelith/fine_umbrelith_tiles",
+    "bottom": "echoes:block/umbrelith/new_umbrelith/fine_umbrelith_tiles"
   }
 }

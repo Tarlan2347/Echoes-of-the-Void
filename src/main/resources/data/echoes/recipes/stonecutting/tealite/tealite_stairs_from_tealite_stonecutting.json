@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "echoes:tealite"
+  },
+  "result": "echoes:tealite_stairs"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "echoes:umbrelith_furnace",
+    "smeltTime": 400,
+    "ingredients": [
+        {
+            "item": "echoes:violum_nodule"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "echoes:violum_ingot"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "$$$",
+    "$#$",
+    "$$$"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:perialight"
+    },
+    "$": {
+      "item": "echoes:umbrelith"
+    }
+  },
+  "result": {
+    "item": "echoes:violum_smithing_upgrade"
+  }
+}

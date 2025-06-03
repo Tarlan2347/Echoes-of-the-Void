@@ -37,6 +37,8 @@
 
   "item.echoes.violum_smithing_upgrade": "Violum Smithing Upgrade",
 
+  "item.echoes.shiva_scale": "Shiva Scale",
+
   "item.echoes.llerae_fruit": "Llerae Fruit",
   "item.echoes.baked_llerae_fruit": "Baked Llerae Fruit",
   "item.echoes.cobalt_shimmer_flower": "Cobalt Shimmer Flower",
@@ -68,6 +70,7 @@
   "block.echoes.perialight_block": "Perialight Block",
   "block.echoes.regite_block": "Regite Block",
   "block.echoes.xirium_block": "Xirium Block",
+  "block.echoes.glowing_xirium_block": "Glowing Xirium Block",
   "block.echoes.brimnite_block": "Brimnite Block",
   "block.echoes.resonane_block": "Resonane Block",
   "block.echoes.umbrite_block": "Umbrite Block",
@@ -285,7 +288,7 @@
 
   "block.echoes.cobalt_tuft_small": "Cobalt Tuft",
 
-  "block.echoes.cobalt_moss_carpet": "Cobalt Moss Carpet",
+  "block.echoes.cobalt_moss_layer": "Cobalt Moss",
 
   "block.echoes.mossberry": "Mossberry",
   "block.echoes.ink_tendril": "Ink Tendril",

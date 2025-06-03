@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:glarium_ingot"
+    }
+  ],
+  "result": {
+    "item": "echoes:glarium_nugget",
+    "count": 9
+  }
+}

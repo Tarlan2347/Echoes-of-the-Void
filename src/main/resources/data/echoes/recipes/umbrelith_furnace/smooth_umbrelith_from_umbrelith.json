@@ -1,0 +1,13 @@
+{
+    "type": "echoes:umbrelith_furnace",
+    "smeltTime": 100,
+    "ingredients": [
+        {
+            "item": "echoes:umbrelith"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "echoes:smooth_umbrelith"
+    }
+}

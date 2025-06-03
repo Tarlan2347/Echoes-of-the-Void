@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "echoes:block/stone/chiseled_umbrelith"
+    "all": "echoes:block/umbrelith/new_umbrelith/chiseled_umbrelith"
   }
 }

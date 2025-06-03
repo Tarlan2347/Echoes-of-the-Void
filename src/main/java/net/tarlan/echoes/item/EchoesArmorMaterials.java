@@ -15,10 +15,6 @@ public enum EchoesArmorMaterials implements ArmorMaterial {
             14, SoundEvents.ARMOR_EQUIP_IRON, 0, 0, ()->
             Ingredient.of(EchoesItems.VERDANTINE_INGOT.get())),
 
-    CHORUSITE("chorusite", 20,new int[]{2,5,6,2},
-            9, SoundEvents.ARMOR_EQUIP_IRON, 0, 0, ()->
-            Ingredient.of(EchoesItems.CHORUSITE_INGOT.get())),
-
     NERON("neron", 20,new int[]{3,5,5,4},
             13, SoundEvents.ARMOR_EQUIP_IRON, 1, 0, ()->
             Ingredient.of(EchoesItems.NERON_INGOT.get())),
@@ -31,8 +27,8 @@ public enum EchoesArmorMaterials implements ArmorMaterial {
             13, SoundEvents.ARMOR_EQUIP_DIAMOND, 3, 0.1f, ()->
             Ingredient.of(EchoesItems.PERIALIGHT.get())),
 
-    VIOLUM("violum", 80,new int[]{7,7,7,7},
-            22, SoundEvents.ARMOR_EQUIP_NETHERITE, 4, 0.15f, ()->
+    VIOLUM("violum", 90,new int[]{8,8,8,8},
+            30, SoundEvents.ARMOR_EQUIP_NETHERITE, 4, 0.15f, ()->
             Ingredient.of(EchoesItems.VIOLUM_INGOT.get()));
 
 
@@ -44,6 +40,10 @@ public enum EchoesArmorMaterials implements ArmorMaterial {
     private final float toughness;
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
+
+    //CHORUSITE("chorusite", 20,new int[]{2,5,6,2},
+    //        9, SoundEvents.ARMOR_EQUIP_IRON, 0, 0, ()->
+    //        Ingredient.of(EchoesItems.CHORUSITE_INGOT.get())),
 
     private static final int[] BASE_DURABILITY = { 11, 16, 16, 13 };
 

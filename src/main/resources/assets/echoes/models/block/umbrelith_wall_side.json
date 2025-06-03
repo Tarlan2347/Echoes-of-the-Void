@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side",
   "textures": {
-    "wall": "echoes:block/stone/umbrelith_block"
+    "wall": "echoes:block/umbrelith/new_umbrelith/umbrelith_block"
   }
 }

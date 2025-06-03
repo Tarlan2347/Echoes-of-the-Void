@@ -10,6 +10,9 @@ public class EchoesBlockStateProperties extends BlockStateProperties {
 
     public static final int MAX_TUFT_SIZE = 5;
     public static final IntegerProperty TUFT_SIZE = IntegerProperty.create("tuft_size", 0, 5);
+    public static final IntegerProperty MOSS_LAYERS = IntegerProperty.create("moss_layers", 1, 8);
+    public static final IntegerProperty TUFTED_MOSS_AGE = IntegerProperty.create("tufted_moss_age", 0, 5);
+    public static final BooleanProperty HAS_TUFT = BooleanProperty.create("has_tuft");
 
     public static final BooleanProperty CONNECTED_UP = BooleanProperty.create("connected_up");
     public static final BooleanProperty CONNECTED_DOWN = BooleanProperty.create("connected_down");

@@ -1,7 +1,7 @@
 {
   "textures": {
-    "texture": "echoes:block/stone/umbrelith_column",
-    "particle": "echoes:block/stone/umbrelith_column"
+    "texture": "echoes:block/umbrelith/new_umbrelith/umbrelith_column",
+    "particle": "echoes:block/umbrelith/new_umbrelith/umbrelith_column"
   },
   "elements": [
     {

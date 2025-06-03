@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:llerae_planks"
+    }
+  },
+  "result": {
+    "item": "echoes:llerae_button",
+    "count": 4
+  }
+}

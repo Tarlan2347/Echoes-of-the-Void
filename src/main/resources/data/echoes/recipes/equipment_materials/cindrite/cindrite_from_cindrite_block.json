@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes:cindrite_block"
+    }
+  ],
+  "result": {
+    "item": "echoes:cindrite",
+    "count": 9
+  }
+}

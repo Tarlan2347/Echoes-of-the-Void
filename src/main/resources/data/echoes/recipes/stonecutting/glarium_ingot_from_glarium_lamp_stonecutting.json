@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    {
+      "tag": "echoes:glarium_lamps"
+    }
+  ],
+  "result": "echoes:glarium_ingot",
+  "count": 1
+}

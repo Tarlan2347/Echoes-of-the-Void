@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "echoes:block/stone/fine_umbrelith_bricks"
+    "all": "echoes:block/umbrelith/new_umbrelith/fine_umbrelith_bricks"
   }
 }

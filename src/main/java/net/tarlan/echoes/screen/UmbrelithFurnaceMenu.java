@@ -8,8 +8,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
@@ -61,6 +63,21 @@ public class UmbrelithFurnaceMenu extends AbstractContainerMenu {
 
         return this.data.get(2) * 16 / i;
     }
+    public int getTotalFueltime() {
+        return this.data.get(3);
+    }public int getRemainingFueltime() {
+        return this.data.get(2);
+    }
+    public int getTotalFuelInSlot() {
+        return umbrelithFurnaceBlockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER)
+                .map(handler -> {
+                    ItemStack stack = handler.getStackInSlot(0); // Slot 0 = fuel
+                    int burnTimePerItem = ForgeHooks.getBurnTime(stack, RecipeType.SMELTING);
+                    return burnTimePerItem * stack.getCount();
+                })
+                .orElse(0);
+    }
+
     public boolean isBurning() {
         return this.data.get(2) > 0;
     }

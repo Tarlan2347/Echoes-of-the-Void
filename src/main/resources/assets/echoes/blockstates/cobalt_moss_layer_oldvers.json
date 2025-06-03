@@ -1,0 +1,29 @@
+
+{
+  "variants": {
+    "moss_layers=1": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_1"
+    },
+    "moss_layers=2": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_2"
+    },
+    "moss_layers=3": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_3"
+    },
+    "moss_layers=4": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_4"
+    },
+    "moss_layers=5": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_5"
+    },
+    "moss_layers=6": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_6"
+    },
+    "moss_layers=7": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_7"
+    },
+    "moss_layers=8": {
+      "model": "echoes:block/cobalt_moss_layers/cobalt_moss_layer_8"
+    }
+  }
+}

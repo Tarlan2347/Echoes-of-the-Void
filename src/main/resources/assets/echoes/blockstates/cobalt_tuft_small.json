@@ -1,22 +1,22 @@
 {
   "variants": {
     "tuft_size=0": {
-        "model": "echoes:block/cobalt_tuft_tiny"
+        "model": "echoes:block/cobalt_tuft_0"
     },
     "tuft_size=1": {
-        "model": "echoes:block/cobalt_tuft_small"
+        "model": "echoes:block/cobalt_tuft_1"
     },
     "tuft_size=2": {
-        "model": "echoes:block/cobalt_tuft_medium"
+        "model": "echoes:block/cobalt_tuft_2"
     },
     "tuft_size=3": {
-        "model": "echoes:block/cobalt_tuft_large"
+        "model": "echoes:block/cobalt_tuft_3"
     },
     "tuft_size=4": {
-        "model": "echoes:block/cobalt_tuft_huge"
+        "model": "echoes:block/cobalt_tuft_4"
     },
     "tuft_size=5": {
-        "model": "echoes:block/cobalt_tuft_gigantic"
+        "model": "echoes:block/cobalt_tuft_5"
     }
   }
 }

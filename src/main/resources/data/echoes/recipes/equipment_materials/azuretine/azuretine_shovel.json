@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "$",
+    "$"
+  ],
+  "key": {
+    "#": {
+      "item": "echoes:azuretine_ingot"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "echoes:azuretine_shovel"
+  }
+}
