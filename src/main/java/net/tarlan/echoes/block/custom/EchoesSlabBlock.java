@@ -99,7 +99,6 @@ public class EchoesSlabBlock extends Block implements SimpleWaterloggedBlock {
             return this.halfUpAabb;
         }
     }
-    //TODO Render an empty voxel shape at the place where the player is looking, matching the getStateForPlacement's determined shape.
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         LevelAccessor levelaccessor = pContext.getLevel();
